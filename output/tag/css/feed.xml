@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://jjyoon-dev.github.io/tag/css/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-07-30T05:48:13+09:00</updated>
+  <id>https://jjyoon-dev.github.io/tag/css/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">JJYoon IT Diary | </title>
+  
+
+  
+    <subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">CSS 강좌(1) - CSS소개</title>
+      <link href="https://jjyoon-dev.github.io/css-intro" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS소개" />
+      <published>2021-06-20T21:31:42+09:00</published>
+      <updated>2021-06-20T21:31:42+09:00</updated>
+      <id>https://jjyoon-dev.github.io/css-intro</id>
+      <content type="html" xml:base="https://jjyoon-dev.github.io/css-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Joshua Jeremiah Uoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="css" />
+      
+
+      
+        <summary type="html">CSS 강의 목차 CSS 강좌(1) - CSS 소개 CSS 강좌(2) - CSS 기초 이 글은 css 기본 강의입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">CSS 강좌(1) - CSS기본</title>
+      <link href="https://jjyoon-dev.github.io/css-basic" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS기본" />
+      <published>2021-06-20T21:31:42+09:00</published>
+      <updated>2021-06-20T21:31:42+09:00</updated>
+      <id>https://jjyoon-dev.github.io/css-basic</id>
+      <content type="html" xml:base="https://jjyoon-dev.github.io/css-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Joshua Jeremiah Uoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="css" />
+      
+
+      
+        <summary type="html">CSS 강의 목차 CSS 강좌(1) - CSS 소개 CSS 강좌(2) - CSS 기초 이 글은 css 기본 강의입니다.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
