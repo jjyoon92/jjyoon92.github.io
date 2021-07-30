@@ -8,6 +8,26 @@
     
       
       <item>
+        <title>HTML(1) - HTML이란?</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 30 Jul 2021 22:16:18 +0900</pubDate>
+        <link>
+        https://jjyoon-dev.github.io/html-basic-one</link>
+        <guid isPermaLink="true">https://jjyoon-dev.github.io/html-basic-one</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>JavaScript 강좌(2) - JavaScript기본</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
@@ -31,8 +51,8 @@
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-first-chapter&quot;&gt;HTML 강좌(1) - HTML 소개&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 강좌(2) - HTML 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;이 글은 html 기초에 대한 강의입니다.&lt;/p&gt;
 
@@ -42,26 +62,6 @@
         <link>
         https://jjyoon-dev.github.io/html-second-chapter</link>
         <guid isPermaLink="true">https://jjyoon-dev.github.io/html-second-chapter</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>HTML 강좌(1) - HTML 소개</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-first-chapter&quot;&gt;HTML 강좌(1) - HTML 소개&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 강좌(2) - HTML 기초&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이 글은 html 기본 강의입니다.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 20 Jun 2021 21:31:42 +0900</pubDate>
-        <link>
-        https://jjyoon-dev.github.io/html-first-chapter</link>
-        <guid isPermaLink="true">https://jjyoon-dev.github.io/html-first-chapter</guid>
       </item>
       
     

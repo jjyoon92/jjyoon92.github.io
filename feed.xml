@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-07-30T19:46:26+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">JavaScript 강좌(2) - JavaScript기본</title><link href="https://jjyoon-dev.github.io/js-basic" rel="alternate" type="text/html" title="JavaScript 강좌(2) - JavaScript기본" /><published>2021-06-27T07:42:11+09:00</published><updated>2021-06-27T07:42:11+09:00</updated><id>https://jjyoon-dev.github.io/js-basic</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-07-30T23:43:31+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">HTML(1) - HTML이란?</title><link href="https://jjyoon-dev.github.io/html-basic-one" rel="alternate" type="text/html" title="HTML(1) - HTML이란?" /><published>2021-07-30T22:16:18+09:00</published><updated>2021-07-30T22:16:18+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-one</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-one">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;html이란&quot;&gt;HTML이란?&lt;/h2&gt;
+&lt;p&gt;HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어
+확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다.
+현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다.&lt;/p&gt;
+
+&lt;h2 id=&quot;마크업markup언어란&quot;&gt;마크업(MarkUp)언어란?&lt;/h2&gt;
+&lt;p&gt;대표적으로 HTML, XML, SAMI 등이 있으며 
+마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는 역할을 한다.&lt;br /&gt;
+비슷한 &lt;a href=&quot;https://jjyoon-dev.github.io/&quot;&gt;마크다운&lt;/a&gt; 또한 마크업 언어로 이는 해당 페이지에서 설명.&lt;/p&gt;
+
+&lt;h2 id=&quot;html-tag&quot;&gt;HTML Tag&lt;/h2&gt;
+&lt;p&gt;태그는 시작 태그와 종료 태그가 있으며 “&amp;lt;” 와 “&amp;gt;”로 둘러싸여있다.&lt;br /&gt;
+시작 태그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;tag&amp;gt;&lt;/code&gt;, 종료 태그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;/tag&amp;gt;&lt;/code&gt;와 같은 형태를 가지며 종료 태그에는 반드시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;가 포함되어야 한다.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;img, br, input&lt;/code&gt;등의 일부 태그들은 종료 태그가 없이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;img /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;input /&amp;gt;&lt;/code&gt;와 같은 형태로 사용 가능한데, 이를 ‘빈 태그(Empty Tag)’ 또는 ‘빈 요소(Empty Elements, Void Elements)라고 한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;    
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;  ----------------┐
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;                                     │---&amp;gt; 종료태그가 없다.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/sample-image.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; ----┘
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;속성attribute&quot;&gt;속성(attribute)&lt;/h2&gt;
+&lt;p&gt;시작 태그는 필요에 따라 속성을 가질 수 있는데, 한번에 여러 개의 속성을 선언 할 수 있으며, 속성의 유형에 따라 형태가 달라진다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h6 id=&quot;전역속성global-attribute&quot;&gt;전역속성(Global Attribute)&lt;/h6&gt;
+    &lt;p&gt;HTML 요소가 공통으로 사용 가능한 속성으로 대표적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt;가 있으며 이는 해당 태그에 클래스 이름을 지정하는 속성이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-box&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello World&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h6 id=&quot;이벤트속성event-attribute&quot;&gt;이벤트속성(Event Attribute)&lt;/h6&gt;
+    &lt;p&gt;문서객체 속성 중 on을 붙여 사용 가능한 속성으로 보통 script와 함께 사용된다.&lt;br /&gt;
+예를들어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onclick&lt;/code&gt;의 경우 해당 요소를 클릭하면 실행될 스크립트를 지정하는 형식이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submit();&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;제출&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;제출완료!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+submit()함수를 onclick에 넣어 실행시킬 수 있다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h6 id=&quot;논리속성logical-attribute&quot;&gt;논리속성(Logical Attribute)&lt;/h6&gt;
+    &lt;p&gt;불리언(bollean)속성으로 대표적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;input /&amp;gt;&lt;/code&gt;태그의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;required&lt;/code&gt;속성이 있는데, 이는 명시할 경우 자동으로 true 값을 가지고, 명시하지 않으면 false 값을 가지게 된다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;id&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;required&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;nickname&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;password&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;password&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;required&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값을 입력해야한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;요소element&quot;&gt;요소(Element)&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;태그&amp;gt;내용&amp;lt;/태그&amp;gt;&lt;/code&gt;로 이루어진 형태를 말한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/9b19f2818482c6618c82e23b4e6a5a3a4d94c57d&quot; width=&quot;100%&quot; /&gt;
+&lt;small&gt;출처: &lt;a href=&quot;https://ko.wikipedia.org/wiki/HTML_%EC%9A%94%EC%86%8C&quot;&gt;위키백과&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+하지만 일부 빈 요소(Empty Elements)들은 종료 태그가 필수는 아니다.&lt;/p&gt;
+
+&lt;!-- 
+
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;bGWNaQG&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class='codepen split-output'
+style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is codepen test&lt;/a&gt; by jjyoon-dev (&lt;a href='https://codepen.io/jjyoon-dev'&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+ --&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조</summary></entry><entry><title type="html">JavaScript 강좌(2) - JavaScript기본</title><link href="https://jjyoon-dev.github.io/js-basic" rel="alternate" type="text/html" title="JavaScript 강좌(2) - JavaScript기본" /><published>2021-06-27T07:42:11+09:00</published><updated>2021-06-27T07:42:11+09:00</updated><id>https://jjyoon-dev.github.io/js-basic</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
@@ -28,8 +116,8 @@
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="javascript" /><summary type="html">JavaScript 강의 목차 JavaScript 강좌(1) - JavaScript기초 JavaScript 강좌(2) - JavaScript기본</summary></entry><entry><title type="html">HTML 강좌(2) - HTML 기초</title><link href="https://jjyoon-dev.github.io/html-second-chapter" rel="alternate" type="text/html" title="HTML 강좌(2) - HTML 기초" /><published>2021-06-22T21:31:42+09:00</published><updated>2021-06-22T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/html-second-chapter</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-second-chapter">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-first-chapter&quot;&gt;HTML 강좌(1) - HTML 소개&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 강좌(2) - HTML 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;이 글은 html 기초에 대한 강의입니다.&lt;/p&gt;
 
@@ -47,7 +135,7 @@ function resetCanvas(status, src) {
     AuditLog.pushState(&amp;#39;status&amp;#39;, status, false); // async servers don&amp;#39;t keep audit logs
     return !status.canvasStatus.exceedsUpperBound &amp;amp;&amp;amp; AuditLog.sanityCheck();
 }&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js&quot;&gt; &lt;/script&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML 강의 목차 HTML 강좌(1) - HTML 소개 HTML 강좌(2) - HTML 기초 이 글은 html 기초에 대한 강의입니다.</summary></entry><entry><title type="html">CSS 강좌(1) - CSS소개</title><link href="https://jjyoon-dev.github.io/css-intro" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS소개" /><published>2021-06-20T21:31:42+09:00</published><updated>2021-06-20T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/css-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/css-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js&quot;&gt; &lt;/script&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 이 글은 html 기초에 대한 강의입니다.</summary></entry><entry><title type="html">CSS 강좌(1) - CSS소개</title><link href="https://jjyoon-dev.github.io/css-intro" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS소개" /><published>2021-06-20T21:31:42+09:00</published><updated>2021-06-20T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/css-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/css-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
@@ -57,21 +145,7 @@ function resetCanvas(status, src) {
     &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="css" /><summary type="html">CSS 강의 목차 CSS 강좌(1) - CSS 소개 CSS 강좌(2) - CSS 기초 이 글은 css 기본 강의입니다.</summary></entry><entry><title type="html">HTML 강좌(1) - HTML 소개</title><link href="https://jjyoon-dev.github.io/html-first-chapter" rel="alternate" type="text/html" title="HTML 강좌(1) - HTML 소개" /><published>2021-06-20T21:31:42+09:00</published><updated>2021-06-20T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/html-first-chapter</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-first-chapter">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-first-chapter&quot;&gt;HTML 강좌(1) - HTML 소개&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 강좌(2) - HTML 기초&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;이 글은 html 기본 강의입니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;bGWNaQG&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
-See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/bGWNaQG/&quot;&gt;this is codepen test&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML 강의 목차 HTML 강좌(1) - HTML 소개 HTML 강좌(2) - HTML 기초 이 글은 html 기본 강의입니다.</summary></entry><entry><title type="html">JavaScript 강좌(1) - JavaScript기초</title><link href="https://jjyoon-dev.github.io/js-intro" rel="alternate" type="text/html" title="JavaScript 강좌(1) - JavaScript기초" /><published>2021-06-10T21:31:42+09:00</published><updated>2021-06-10T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/js-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="css" /><summary type="html">CSS 강의 목차 CSS 강좌(1) - CSS 소개 CSS 강좌(2) - CSS 기초 이 글은 css 기본 강의입니다.</summary></entry><entry><title type="html">JavaScript 강좌(1) - JavaScript기초</title><link href="https://jjyoon-dev.github.io/js-intro" rel="alternate" type="text/html" title="JavaScript 강좌(1) - JavaScript기초" /><published>2021-06-10T21:31:42+09:00</published><updated>2021-06-10T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/js-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
