@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://jjyoon-dev.github.io/tag/html/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-31T01:40:49+09:00</updated>
+  <updated>2021-07-31T01:46:20+09:00</updated>
   <id>https://jjyoon-dev.github.io/tag/html/feed.xml</id>
 
   
@@ -200,6 +200,8 @@ See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is c
         indexListTop.classList.toggle(&quot;active&quot;);
     })
 &lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;noscript&gt;&lt;pre&gt;const basePixelFilter = [255, 127, 127, 0.8];
 
