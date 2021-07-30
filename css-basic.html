@@ -66,6 +66,9 @@
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
 
+
+
+
 이 글은 css 기본 강의입니다.
 " />
     <meta property="og:url" content="https://jjyoon-dev.github.io/css-basic" />
@@ -81,6 +84,9 @@
 
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
+
+
+
 
 이 글은 css 기본 강의입니다.
 " />
@@ -119,6 +125,9 @@
 
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
+
+
+
 
 이 글은 css 기본 강의입니다.
 "
@@ -226,11 +235,21 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">CSS 강의 목차 </span></p>
-<ul class="table-of-contents-list">
+                    <p><span class="table-of-contents-list index-title" style="cursor:pointer; text-decoration: none; font-weight:bold;">CSS 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list">
     <li><a href="./css-intro">CSS 강좌(1) - CSS 소개</a></li>
     <li><a href="./css-basic">CSS 강좌(2) - CSS 기초</a></li>
 </ul>
+
+<script>
+    let indexTitle = document.body.querySelector(".index-title");
+    let indexList = document.body.querySelector(".index-list")
+    indexTitle.addEventListener("click", function() {
+        indexTitle.classList.toggle("active");
+        indexList.classList.toggle("active");
+    })
+</script>
+
 <p>이 글은 css 기본 강의입니다.</p>
 
                 </div>
@@ -389,7 +408,8 @@ into the {body} of the default.hbs template -->
     HTML(1) - HTML이란?
     HTML 2강 - HTML의 구조
 
-이 글은 html 기초에 대한 강의입니다.
+
+
 
 </p>
                     
@@ -440,6 +460,9 @@ into the {body} of the default.hbs template -->
 
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
+
+
+
 
 이 글은 css 기본 강의입니다.
 </p>

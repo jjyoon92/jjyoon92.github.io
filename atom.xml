@@ -10,12 +10,7 @@
       <item>
         <title>HTML(1) - HTML이란?</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+          <description>&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.&lt;/p&gt;
 
 </description>
         
@@ -30,11 +25,20 @@
       <item>
         <title>JavaScript 강좌(2) - JavaScript기본</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
+    let indexList = document.body.querySelector(&quot;.index-list&quot;)
+    indexTitle.addEventListener(&quot;click&quot;, function() {
+        indexTitle.classList.toggle(&quot;active&quot;);
+        indexList.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
 
 </description>
         
@@ -49,12 +53,20 @@
       <item>
         <title>HTML 강좌(2) - HTML 기초</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이 글은 html 기초에 대한 강의입니다.&lt;/p&gt;
+
+&lt;script&gt;
+    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
+    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
+    indexTitleTop.addEventListener(&quot;click&quot;, function() {
+        indexTitleTop.classList.toggle(&quot;active&quot;);
+        indexListTop.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
 
 </description>
         
@@ -69,11 +81,21 @@
       <item>
         <title>CSS 강좌(1) - CSS기본</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
+    let indexList = document.body.querySelector(&quot;.index-list&quot;)
+    indexTitle.addEventListener(&quot;click&quot;, function() {
+        indexTitle.classList.toggle(&quot;active&quot;);
+        indexList.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
 &lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;
 </description>
         
@@ -88,11 +110,21 @@
       <item>
         <title>CSS 강좌(1) - CSS소개</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
+    let indexList = document.body.querySelector(&quot;.index-list&quot;)
+    indexTitle.addEventListener(&quot;click&quot;, function() {
+        indexTitle.classList.toggle(&quot;active&quot;);
+        indexList.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
 &lt;p&gt;이 글은 css 기본 강의입니다.&lt;/p&gt;
 </description>
         
@@ -107,11 +139,20 @@
       <item>
         <title>JavaScript 강좌(1) - JavaScript기초</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
+    let indexList = document.body.querySelector(&quot;.index-list&quot;)
+    indexTitle.addEventListener(&quot;click&quot;, function() {
+        indexTitle.classList.toggle(&quot;active&quot;);
+        indexList.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
 
 </description>
         

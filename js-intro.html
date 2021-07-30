@@ -67,6 +67,8 @@
     JavaScript 강좌(2) - JavaScript기본
 
 
+
+
 이 글은 css 기본 강의입니다.
 " />
     <meta property="og:url" content="https://jjyoon-dev.github.io/js-intro" />
@@ -82,6 +84,8 @@
 
     JavaScript 강좌(1) - JavaScript기초
     JavaScript 강좌(2) - JavaScript기본
+
+
 
 
 이 글은 css 기본 강의입니다.
@@ -121,6 +125,8 @@
 
     JavaScript 강좌(1) - JavaScript기초
     JavaScript 강좌(2) - JavaScript기본
+
+
 
 
 이 글은 css 기본 강의입니다.
@@ -229,11 +235,20 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">JavaScript 강의 목차 </span></p>
-<ul class="table-of-contents-list">
+                    <p><span class="table-of-contents-list index-title" style="cursor:pointer; text-decoration: none; font-weight:bold;">JavaScript 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list">
     <li><a href="./js-intro">JavaScript 강좌(1) - JavaScript기초</a></li>
     <li><a href="./js-basic">JavaScript 강좌(2) - JavaScript기본</a></li>
 </ul>
+
+<script>
+    let indexTitle = document.body.querySelector(".index-title");
+    let indexList = document.body.querySelector(".index-list")
+    indexTitle.addEventListener("click", function() {
+        indexTitle.classList.toggle("active");
+        indexList.classList.toggle("active");
+    })
+</script>
 
 <p>이 글은 css 기본 강의입니다.</p>
 
@@ -392,6 +407,9 @@ into the {body} of the default.hbs template -->
 
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
+
+
+
 
 이 글은 css 기본 강의입니다.
 </p>

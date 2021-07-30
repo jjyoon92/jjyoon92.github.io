@@ -61,7 +61,7 @@
     <meta property="og:site_name" content="JJYoon IT Diary" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HTML(1) - HTML이란?" />
-    <meta property="og:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI 등이 있으며 마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는" />
+    <meta property="og:description" content="HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다. HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI" />
     <meta property="og:url" content="https://jjyoon-dev.github.io/html-basic-one" />
     <meta property="og:image" content="https://jjyoon-dev.github.io/assets/built/images/html-thumbnail.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -71,7 +71,7 @@
     <meta property="article:tag" content="Html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="HTML(1) - HTML이란?" />
-    <meta name="twitter:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI 등이 있으며 마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는" />
+    <meta name="twitter:description" content="HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다. HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI" />
     <meta name="twitter:url" content="https://jjyoon-dev.github.io/" />
     <meta name="twitter:image" content="https://jjyoon-dev.github.io/assets/built/images/html-thumbnail.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -103,7 +103,7 @@
         "@type": "WebPage",
         "@id": "https://jjyoon-dev.github.io/html-basic-one"
     },
-    "description": "HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI 등이 있으며 마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는"
+    "description": "HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다. HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 HTML이란? HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어 확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다. 현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다. 마크업(MarkUp)언어란? 대표적으로 HTML, XML, SAMI"
 }
     </script>
 
@@ -208,11 +208,23 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">HTML 강의 목차 </span></p>
-<ul class="table-of-contents-list">
+                    <p>HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.</p>
+
+<p><span class="table-of-contents-list index-title top" style="cursor:pointer; text-decoration: none; font-weight:bold;">HTML 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list top">
     <li><a href="./html-basic-one">HTML(1) - HTML이란?</a></li>
     <li><a href="./html-second-chapter">HTML 2강 - HTML의 구조</a></li>
 </ul>
+
+<script>
+    let indexTitleTop = document.body.querySelector(".index-title.top");
+    let indexListTop = document.body.querySelector(".index-list.top")
+    indexTitleTop.addEventListener("click", function() {
+        indexTitleTop.classList.toggle("active");
+        indexListTop.classList.toggle("active");
+    })
+</script>
+
 <p><br /><br /></p>
 
 <h2 id="html이란">HTML이란?</h2>
@@ -288,6 +300,21 @@ name이 "id"와 "password"인 input태그는 반드시 값을 입력해야한다
 <p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b19f2818482c6618c82e23b4e6a5a3a4d94c57d" width="100%" />
 <small>출처: <a href="https://ko.wikipedia.org/wiki/HTML_%EC%9A%94%EC%86%8C">위키백과</a></small><br />
 하지만 일부 빈 요소(Empty Elements)들은 종료 태그가 필수는 아니다.</p>
+
+<p><span class="table-of-contents-list index-title bottom" style="cursor:pointer; text-decoration: none; font-weight:bold;">HTML 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list bottom">
+    <li><a href="./html-basic-one">HTML(1) - HTML이란?</a></li>
+    <li><a href="./html-second-chapter">HTML 2강 - HTML의 구조</a></li>
+</ul>
+
+<script>
+    let indexTitleBottom = document.body.querySelector(".index-title.bottom");
+    let indexListBottom = document.body.querySelector(".index-list.bottom")
+    indexTitleBottom.addEventListener("click", function() {
+        indexTitleBottom.classList.toggle("active");
+        indexListBottom.classList.toggle("active");
+    })
+</script>
 
 <!-- 
 
@@ -456,6 +483,8 @@ See the Pen <a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'>this is codepen
 
     JavaScript 강좌(1) - JavaScript기초
     JavaScript 강좌(2) - JavaScript기본
+
+
 
 
 </p>

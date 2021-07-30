@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://jjyoon-dev.github.io/tag/html/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-30T23:45:16+09:00</updated>
+  <updated>2021-07-31T01:40:49+09:00</updated>
   <id>https://jjyoon-dev.github.io/tag/html/feed.xml</id>
 
   
@@ -37,11 +37,23 @@
       <published>2021-07-30T22:16:18+09:00</published>
       <updated>2021-07-30T22:16:18+09:00</updated>
       <id>https://jjyoon-dev.github.io/html-basic-one</id>
-      <content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-one">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-one">&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
+    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
+    indexTitleTop.addEventListener(&quot;click&quot;, function() {
+        indexTitleTop.classList.toggle(&quot;active&quot;);
+        indexListTop.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;html이란&quot;&gt;HTML이란?&lt;/h2&gt;
@@ -118,6 +130,21 @@ name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값�
 &lt;small&gt;출처: &lt;a href=&quot;https://ko.wikipedia.org/wiki/HTML_%EC%9A%94%EC%86%8C&quot;&gt;위키백과&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 하지만 일부 빈 요소(Empty Elements)들은 종료 태그가 필수는 아니다.&lt;/p&gt;
 
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleBottom = document.body.querySelector(&quot;.index-title.bottom&quot;);
+    let indexListBottom = document.body.querySelector(&quot;.index-list.bottom&quot;)
+    indexTitleBottom.addEventListener(&quot;click&quot;, function() {
+        indexTitleBottom.classList.toggle(&quot;active&quot;);
+        indexListBottom.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
 &lt;!-- 
 
 
@@ -146,7 +173,7 @@ See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is c
       
 
       
-        <summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조</summary>
+        <summary type="html">HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.</summary>
       
 
       
@@ -159,12 +186,20 @@ See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is c
       <published>2021-06-22T21:31:42+09:00</published>
       <updated>2021-06-22T21:31:42+09:00</updated>
       <id>https://jjyoon-dev.github.io/html-second-chapter</id>
-      <content type="html" xml:base="https://jjyoon-dev.github.io/html-second-chapter">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://jjyoon-dev.github.io/html-second-chapter">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이 글은 html 기초에 대한 강의입니다.&lt;/p&gt;
+
+&lt;script&gt;
+    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
+    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
+    indexTitleTop.addEventListener(&quot;click&quot;, function() {
+        indexTitleTop.classList.toggle(&quot;active&quot;);
+        indexListTop.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
 
 &lt;noscript&gt;&lt;pre&gt;const basePixelFilter = [255, 127, 127, 0.8];
 
@@ -180,7 +215,22 @@ function resetCanvas(status, src) {
     AuditLog.pushState(&amp;#39;status&amp;#39;, status, false); // async servers don&amp;#39;t keep audit logs
     return !status.canvasStatus.exceedsUpperBound &amp;amp;&amp;amp; AuditLog.sanityCheck();
 }&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js&quot;&gt; &lt;/script&gt;</content>
+&lt;script src=&quot;https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleBottom = document.body.querySelector(&quot;.index-title.bottom&quot;);
+    let indexListBottom = document.body.querySelector(&quot;.index-list.bottom&quot;)
+    indexTitleBottom.addEventListener(&quot;click&quot;, function() {
+        indexTitleBottom.classList.toggle(&quot;active&quot;);
+        indexListBottom.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;</content>
 
       
       
@@ -201,7 +251,7 @@ function resetCanvas(status, src) {
       
 
       
-        <summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 이 글은 html 기초에 대한 강의입니다.</summary>
+        <summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조</summary>
       
 
       

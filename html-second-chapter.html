@@ -61,7 +61,7 @@
     <meta property="og:site_name" content="JJYoon IT Diary" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HTML 강좌(2) - HTML 기초" />
-    <meta property="og:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 이 글은 html 기초에 대한 강의입니다. const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var" />
+    <meta property="og:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var pixelScore = src.data[i] / 3 +" />
     <meta property="og:url" content="https://jjyoon-dev.github.io/html-second-chapter" />
     <meta property="og:image" content="https://jjyoon-dev.github.io/assets/built/images/html-thumbnail.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -71,7 +71,7 @@
     <meta property="article:tag" content="Html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="HTML 강좌(2) - HTML 기초" />
-    <meta name="twitter:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 이 글은 html 기초에 대한 강의입니다. const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var" />
+    <meta name="twitter:description" content="HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var pixelScore = src.data[i] / 3 +" />
     <meta name="twitter:url" content="https://jjyoon-dev.github.io/" />
     <meta name="twitter:image" content="https://jjyoon-dev.github.io/assets/built/images/html-thumbnail.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -103,7 +103,7 @@
         "@type": "WebPage",
         "@id": "https://jjyoon-dev.github.io/html-second-chapter"
     },
-    "description": "HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 이 글은 html 기초에 대한 강의입니다. const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var"
+    "description": "HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조 const basePixelFilter = [255, 127, 127, 0.8]; // sets up canvas state for next capture interval function resetCanvas(status, src) { for (var i = 0; i &lt; src.data.length; i += 4) { var pixelScore = src.data[i] / 3 +"
 }
     </script>
 
@@ -208,12 +208,20 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">HTML 강의 목차 </span></p>
-<ul class="table-of-contents-list">
+                    <p><span class="table-of-contents-list index-title top" style="cursor:pointer; text-decoration: none; font-weight:bold;">HTML 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list top">
     <li><a href="./html-basic-one">HTML(1) - HTML이란?</a></li>
     <li><a href="./html-second-chapter">HTML 2강 - HTML의 구조</a></li>
 </ul>
-<p>이 글은 html 기초에 대한 강의입니다.</p>
+
+<script>
+    let indexTitleTop = document.body.querySelector(".index-title.top");
+    let indexListTop = document.body.querySelector(".index-list.top")
+    indexTitleTop.addEventListener("click", function() {
+        indexTitleTop.classList.toggle("active");
+        indexListTop.classList.toggle("active");
+    })
+</script>
 
 <noscript><pre>const basePixelFilter = [255, 127, 127, 0.8];
 
@@ -230,6 +238,21 @@ function resetCanvas(status, src) {
     return !status.canvasStatus.exceedsUpperBound &amp;&amp; AuditLog.sanityCheck();
 }</pre></noscript>
 <script src="https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js"> </script>
+
+<p><span class="table-of-contents-list index-title bottom" style="cursor:pointer; text-decoration: none; font-weight:bold;">HTML 강의 목차 </span></p>
+<ul class="table-of-contents-list index-list bottom">
+    <li><a href="./html-basic-one">HTML(1) - HTML이란?</a></li>
+    <li><a href="./html-second-chapter">HTML 2강 - HTML의 구조</a></li>
+</ul>
+
+<script>
+    let indexTitleBottom = document.body.querySelector(".index-title.bottom");
+    let indexListBottom = document.body.querySelector(".index-list.bottom")
+    indexTitleBottom.addEventListener("click", function() {
+        indexTitleBottom.classList.toggle("active");
+        indexListBottom.classList.toggle("active");
+    })
+</script>
 
 
                 </div>
@@ -389,6 +412,8 @@ function resetCanvas(status, src) {
     JavaScript 강좌(2) - JavaScript기본
 
 
+
+
 </p>
                     
                 </section>
@@ -438,6 +463,9 @@ function resetCanvas(status, src) {
 
     CSS 강좌(1) - CSS 소개
     CSS 강좌(2) - CSS 기초
+
+
+
 
 이 글은 css 기본 강의입니다.
 </p>
