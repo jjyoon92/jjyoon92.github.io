@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://jjyoon-dev.github.io/html-basic-two.html</loc>
+        
+        <lastmod>2021-08-01T00:50:11+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://jjyoon-dev.github.io/html-basic-one.html</loc>
         
         <lastmod>2021-07-30T22:16:18+09:00</lastmod>
@@ -23,22 +39,6 @@
         <loc>https://jjyoon-dev.github.io/js-basic.html</loc>
         
         <lastmod>2021-06-27T07:42:11+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://jjyoon-dev.github.io/html-second-chapter.html</loc>
-        
-        <lastmod>2021-06-22T21:31:42+09:00</lastmod>
         
 
         

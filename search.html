@@ -197,11 +197,20 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "html-basic-two": {
+        "title": "HTML(2) - HTML의 기본구조",
+            "author": "jjyoon",
+            "category": "",
+            "content": "HTML의 가장 기본적인 구조에 대해 설명합니다.HTML 강의 목차     HTML(1) - HTML이란?    HTML(2) - HTML의 기본구조&lt;!DOCTYPE html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset=\"utf-8\"&gt;        &lt;title&gt;제목&lt;/title&gt;    &lt;/head&gt;    &lt;body&gt;        &lt;p&gt;내용&lt;/p&gt;    &lt;/body&gt;&lt;/html&gt;1. &lt;!DOCTYPE html&gt;  웹문서가 어떤 버전의 HTML 언어로 작성되었는지 선언함으로써 브라우저에 알리는 역할이다.  위와 같이 작성시 HTML5를 사용함을 나타내며, 문서간의 호환성을 높이기위한 목적을 가진다.2.&lt;html&gt;&lt;/html&gt;  HTML 문서의 범위를 지정한다. &lt;/html&gt;종료 태그 이전까지 지정.  브라우저가 &lt;html&gt;태그를 만나면, html이 시작되었는지를 인지하고 요소를 그릴 준비를 한다.3. &lt;head&gt;&lt;/head&gt;  HTML의 머리말에 해당하는 부분으로 외부 파일들을 링크하거나 문서에 관한 정보들을 알릴때 사용한다.  HTML 문서에 대한 정보를 정의하는 태그들을 &lt;head&gt; 태그안에 작성한다.  해당 태그 안에는 &lt;title&gt;, &lt;script&gt;, &lt;link&gt;, &lt;meta&gt;태그 등이 들어가며 &lt;title&gt;태그를 제외하고는 웹 브라우저에 나타나지 않는다.4. &lt;meta /&gt;  웹 서버와 웹 브라우저간에 상호 교환되는 정보인 메타데이터(metadata)를 정의하는데 사용한다.  반드시 &lt;head&gt;태그 내에 위치해야 한다.  속성으로 name, http-equiv, content가 사용되며 name 또는 http-equiv이 명시되었을때 content는 반드시 함께 명시되어야 한다. content는 name또는 http-equiv속성 없이 단독으로 명시될 수 없다.5. &lt;title&gt;&lt;/title&gt;  HTML문서의 제목을 지정하는 태그로 64문자 이내로 간단 명료하게 기입하는 것을 권장한다.  작성시 웹 브라우저의 탭이나 제목 표시줄에 표시된다.6. &lt;body&gt;&lt;/body&gt;  &lt;body&gt;태그는 HTML문서를 표현하는 부분으로, 웹 페이지에 나오는 내용이나 정보를 작성하는 범위를 지정한다.  사용자가 볼 수 있는 내용들은 &lt;body&gt;범위 안에서만 생성해야 한다.HTML 강의 목차     HTML(1) - HTML이란?    HTML(2) - HTML의 기본구조",
+        "url": "/html-basic-two"
+    }
+    ,
+    
     "html-basic-one": {
         "title": "HTML(1) - HTML이란?",
             "author": "jjyoon",
             "category": "",
-            "content": "HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.HTML 강의 목차     HTML(1) - HTML이란?    HTML 2강 - HTML의 구조HTML이란?HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다.현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다.마크업(MarkUp)언어란?대표적으로 HTML, XML, SAMI 등이 있으며 마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는 역할을 한다.비슷한 마크다운 또한 마크업 언어로 이는 해당 페이지에서 설명.HTML Tag태그는 시작 태그와 종료 태그가 있으며 “&lt;” 와 “&gt;”로 둘러싸여있다.시작 태그는 &lt;tag&gt;, 종료 태그는 &lt;/tag&gt;와 같은 형태를 가지며 종료 태그에는 반드시 /가 포함되어야 한다.img, br, input등의 일부 태그들은 종료 태그가 없이 &lt;img /&gt;&lt;br /&gt;&lt;input /&gt;와 같은 형태로 사용 가능한데, 이를 ‘빈 태그(Empty Tag)’ 또는 ‘빈 요소(Empty Elements, Void Elements)라고 한다.&lt;div&gt;    &lt;p&gt;Hello World&lt;/p&gt;        &lt;input type=\"text\" /&gt;  ----------------┐&lt;/div&gt;                                     │---&gt; 종료태그가 없다.&lt;img src=\"/images/sample-image.jpg\" /&gt; ----┘속성(attribute)시작 태그는 필요에 따라 속성을 가질 수 있는데, 한번에 여러 개의 속성을 선언 할 수 있으며, 속성의 유형에 따라 형태가 달라진다.      전역속성(Global Attribute)    HTML 요소가 공통으로 사용 가능한 속성으로 대표적으로 class가 있으며 이는 해당 태그에 클래스 이름을 지정하는 속성이다.  &lt;div class=\"text-box\"&gt;    &lt;p class=\"text\"&gt;Hello World&lt;/p&gt;&lt;/div&gt;      이벤트속성(Event Attribute)    문서객체 속성 중 on을 붙여 사용 가능한 속성으로 보통 script와 함께 사용된다.예를들어 onclick의 경우 해당 요소를 클릭하면 실행될 스크립트를 지정하는 형식이다.  &lt;input type=\"button\" onclick=\"submit();\" value=\"제출\" /&gt;&lt;script&gt;    function submit() {        console.log(\"제출완료!\");    }&lt;/script&gt;submit()함수를 onclick에 넣어 실행시킬 수 있다.      논리속성(Logical Attribute)    불리언(bollean)속성으로 대표적으로 &lt;input /&gt;태그의 required속성이 있는데, 이는 명시할 경우 자동으로 true 값을 가지고, 명시하지 않으면 false 값을 가지게 된다.  &lt;input type=\"text\" name=\"id\" required /&gt;&lt;input type=\"text\" name=\"nickname\" /&gt;&lt;input type=\"password\" name=\"password\" required /&gt;name이 \"id\"와 \"password\"인 input태그는 반드시 값을 입력해야한다.요소(Element)&lt;태그&gt;내용&lt;/태그&gt;로 이루어진 형태를 말한다.출처: 위키백과하지만 일부 빈 요소(Empty Elements)들은 종료 태그가 필수는 아니다.HTML 강의 목차     HTML(1) - HTML이란?    HTML 2강 - HTML의 구조",
+            "content": "HTML의 기본 개념과 Tag 및 속성에 대한 간략적인 내용을 설명합니다.HTML 강의 목차     HTML(1) - HTML이란?    HTML(2) - HTML의 기본구조HTML이란?HyperText Markup Language의 약자로 웹문서를 작성하기 위한 마크업 언어확장자로 .html을 사용하며 태그(Tag)들로 이루어져 있다.현재는 HTML5 버전으로 W3C에서 2014년 10월 28일에 표준화 하였다.마크업(MarkUp)언어란?대표적으로 HTML, XML, SAMI 등이 있으며 마크(태그)로 둘러싸인 언어로 문서나 데이터의 구조를 표현하는 역할을 한다.비슷한 마크다운 또한 마크업 언어로 이는 해당 페이지에서 설명.HTML Tag태그는 시작 태그와 종료 태그가 있으며 “&lt;” 와 “&gt;”로 둘러싸여있다.시작 태그는 &lt;tag&gt;, 종료 태그는 &lt;/tag&gt;와 같은 형태를 가지며 종료 태그에는 반드시 /가 포함되어야 한다.img, br, input등의 일부 태그들은 종료 태그가 없이 &lt;img /&gt;&lt;br /&gt;&lt;input /&gt;와 같은 형태로 사용 가능한데, 이를 ‘빈 태그(Empty Tag)’ 또는 ‘빈 요소(Empty Elements, Void Elements)라고 한다.&lt;div&gt;    &lt;p&gt;Hello World&lt;/p&gt;        &lt;input type=\"text\" /&gt;  ----------------┐&lt;/div&gt;                                     │---&gt; 종료태그가 없다.&lt;img src=\"/images/sample-image.jpg\" /&gt; ----┘속성(attribute)시작 태그는 필요에 따라 속성을 가질 수 있는데, 한번에 여러 개의 속성을 선언 할 수 있으며, 속성의 유형에 따라 형태가 달라진다.      전역속성(Global Attribute)    HTML 요소가 공통으로 사용 가능한 속성으로 대표적으로 class가 있으며 이는 해당 태그에 클래스 이름을 지정하는 속성이다.  &lt;div class=\"text-box\"&gt;    &lt;p class=\"text\"&gt;Hello World&lt;/p&gt;&lt;/div&gt;      이벤트속성(Event Attribute)    문서객체 속성 중 on을 붙여 사용 가능한 속성으로 보통 script와 함께 사용된다.예를들어 onclick의 경우 해당 요소를 클릭하면 실행될 스크립트를 지정하는 형식이다.  &lt;input type=\"button\" onclick=\"submit();\" value=\"제출\" /&gt;&lt;script&gt;    function submit() {        console.log(\"제출완료!\");    }&lt;/script&gt;submit()함수를 onclick에 넣어 실행시킬 수 있다.      논리속성(Logical Attribute)    불리언(bollean)속성으로 대표적으로 &lt;input /&gt;태그의 required속성이 있는데, 이는 명시할 경우 자동으로 true 값을 가지고, 명시하지 않으면 false 값을 가지게 된다.  &lt;input type=\"text\" name=\"id\" required /&gt;&lt;input type=\"text\" name=\"nickname\" /&gt;&lt;input type=\"password\" name=\"password\" required /&gt;name이 \"id\"와 \"password\"인 input태그는 반드시 값을 입력해야한다.요소(Element)&lt;태그&gt;내용&lt;/태그&gt;로 이루어진 형태를 말한다.출처: 위키백과하지만 일부 빈 요소(Empty Elements)들은 종료 태그가 필수는 아니다.HTML 강의 목차     HTML(1) - HTML이란?    HTML(2) - HTML의 기본구조",
         "url": "/html-basic-one"
     }
     ,
@@ -212,15 +221,6 @@ into the {body} of the default.hbs template -->
             "category": "",
             "content": "JavaScript 강의 목차     JavaScript 강좌(1) - JavaScript기초    JavaScript 강좌(2) - JavaScript기본이 글은 JavaScript 기본 강의입니다.hello function() {    console.log(\"hello world!\");    $('#id').addClass(\"hi\");    for( var i = 0; i &lt; 5; i++) {        return console.log(i);    }}function syntaxHighlight(code) {   var foo = 'Hello World';   var bar = 100;}h1 {    margin: 0px;    display: block;    background-color: #a3f1bd;    font-size: 18px;}",
         "url": "/js-basic"
-    }
-    ,
-    
-    "html-second-chapter": {
-        "title": "HTML 강좌(2) - HTML 기초",
-            "author": "jjyoon",
-            "category": "",
-            "content": "HTML 강의 목차     HTML(1) - HTML이란?    HTML 2강 - HTML의 구조const basePixelFilter = [255, 127, 127, 0.8];// sets up canvas state for next capture intervalfunction resetCanvas(status, src) {    for (var i = 0; i &lt; src.data.length; i += 4) {        var pixelScore = src.data[i] / 3 + src.data[i + 1] / 3 + src.data[i + 2] / 3;        if (pixelScore &gt; PIXEL_SCORE_THRESHOLD) {            status.canvasStatus.exceedsUpperBound = true;            break;        }    }    AuditLog.pushState(&#39;status&#39;, status, false); // async servers don&#39;t keep audit logs    return !status.canvasStatus.exceedsUpperBound &amp;&amp; AuditLog.sanityCheck();}HTML 강의 목차     HTML(1) - HTML이란?    HTML 2강 - HTML의 구조",
-        "url": "/html-second-chapter"
     }
     ,
     

@@ -8,9 +8,24 @@
     
       
       <item>
+        <title>HTML(2) - HTML의 기본구조</title>
+        
+          <description>&lt;p&gt;HTML의 가장 기본적인 구조에 대해 설명합니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 01 Aug 2021 00:50:11 +0900</pubDate>
+        <link>
+        https://jjyoon-dev.github.io/html-basic-two</link>
+        <guid isPermaLink="true">https://jjyoon-dev.github.io/html-basic-two</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>HTML(1) - HTML이란?</title>
         
-          <description>&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.&lt;/p&gt;
+          <description>&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 간략적인 내용을 설명합니다.&lt;/p&gt;
 
 </description>
         
@@ -46,36 +61,6 @@
         <link>
         https://jjyoon-dev.github.io/js-basic</link>
         <guid isPermaLink="true">https://jjyoon-dev.github.io/js-basic</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>HTML 강좌(2) - HTML 기초</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script&gt;
-    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
-    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
-    indexTitleTop.addEventListener(&quot;click&quot;, function() {
-        indexTitleTop.classList.toggle(&quot;active&quot;);
-        indexListTop.classList.toggle(&quot;active&quot;);
-    })
-&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Tue, 22 Jun 2021 21:31:42 +0900</pubDate>
-        <link>
-        https://jjyoon-dev.github.io/html-second-chapter</link>
-        <guid isPermaLink="true">https://jjyoon-dev.github.io/html-second-chapter</guid>
       </item>
       
     

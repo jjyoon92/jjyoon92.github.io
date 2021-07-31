@@ -1,9 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-07-31T01:46:20+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">HTML(1) - HTML이란?</title><link href="https://jjyoon-dev.github.io/html-basic-one" rel="alternate" type="text/html" title="HTML(1) - HTML이란?" /><published>2021-07-30T22:16:18+09:00</published><updated>2021-07-30T22:16:18+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-one</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-one">&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-08-01T00:56:11+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">HTML(2) - HTML의 기본구조</title><link href="https://jjyoon-dev.github.io/html-basic-two" rel="alternate" type="text/html" title="HTML(2) - HTML의 기본구조" /><published>2021-08-01T00:50:11+09:00</published><updated>2021-08-01T00:50:11+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-two</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-two">&lt;p&gt;HTML의 가장 기본적인 구조에 대해 설명합니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
+    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
+    indexTitleTop.addEventListener(&quot;click&quot;, function() {
+        indexTitleTop.classList.toggle(&quot;active&quot;);
+        indexListTop.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;내용&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;1-doctype-html&quot;&gt;1. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;웹문서가 어떤 버전의 HTML 언어로 작성되었는지 선언함으로써 브라우저에 알리는 역할이다.&lt;/li&gt;
+  &lt;li&gt;위와 같이 작성시 HTML5를 사용함을 나타내며, 문서간의 호환성을 높이기위한 목적을 가진다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2htmlhtml&quot;&gt;2.&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML 문서의 범위를 지정한다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;/html&amp;gt;&lt;/code&gt;종료 태그 이전까지 지정.&lt;/li&gt;
+  &lt;li&gt;브라우저가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt;태그를 만나면, html이 시작되었는지를 인지하고 요소를 그릴 준비를 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-headhead&quot;&gt;3. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML의 머리말에 해당하는 부분으로 외부 파일들을 링크하거나 문서에 관한 정보들을 알릴때 사용한다.&lt;/li&gt;
+  &lt;li&gt;HTML 문서에 대한 정보를 정의하는 태그들을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 태그안에 작성한다.&lt;/li&gt;
+  &lt;li&gt;해당 태그 안에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;, &amp;lt;script&amp;gt;, &amp;lt;link&amp;gt;, &amp;lt;meta&amp;gt;&lt;/code&gt;태그 등이 들어가며 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt;태그를 제외하고는 웹 브라우저에 나타나지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;4-meta-&quot;&gt;4. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta /&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;웹 서버와 웹 브라우저간에 상호 교환되는 정보인 메타데이터(metadata)를 정의하는데 사용한다.&lt;/li&gt;
+  &lt;li&gt;반드시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt;태그 내에 위치해야 한다.&lt;/li&gt;
+  &lt;li&gt;속성으로 name, http-equiv, content가 사용되며 name 또는 http-equiv이 명시되었을때 content는 반드시 함께 명시되어야 한다. content는 name또는 http-equiv속성 없이 단독으로 명시될 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;5-titletitle&quot;&gt;5. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML문서의 제목을 지정하는 태그로 64문자 이내로 간단 명료하게 기입하는 것을 권장한다.&lt;/li&gt;
+  &lt;li&gt;작성시 웹 브라우저의 탭이나 제목 표시줄에 표시된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;6-bodybody&quot;&gt;6. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt;태그는 HTML문서를 표현하는 부분으로, 웹 페이지에 나오는 내용이나 정보를 작성하는 범위를 지정한다.&lt;/li&gt;
+  &lt;li&gt;사용자가 볼 수 있는 내용들은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt;범위 안에서만 생성해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleBottom = document.body.querySelector(&quot;.index-title.bottom&quot;);
+    let indexListBottom = document.body.querySelector(&quot;.index-list.bottom&quot;)
+    indexTitleBottom.addEventListener(&quot;click&quot;, function() {
+        indexTitleBottom.classList.toggle(&quot;active&quot;);
+        indexListBottom.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML의 가장 기본적인 구조에 대해 설명합니다.</summary></entry><entry><title type="html">HTML(1) - HTML이란?</title><link href="https://jjyoon-dev.github.io/html-basic-one" rel="alternate" type="text/html" title="HTML(1) - HTML이란?" /><published>2021-07-30T22:16:18+09:00</published><updated>2021-07-30T22:16:18+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-one</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-one">&lt;p&gt;HTML의 기본 개념과 Tag 및 속성에 대한 간략적인 내용을 설명합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -94,7 +176,7 @@ name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값�
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -113,7 +195,7 @@ name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값�
 style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
 See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is codepen test&lt;/a&gt; by jjyoon-dev (&lt;a href='https://codepen.io/jjyoon-dev'&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
- --&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML의 기본 개념과 Tag 및 속성에 대한 내용을 설명합니다.</summary></entry><entry><title type="html">JavaScript 강좌(2) - JavaScript기본</title><link href="https://jjyoon-dev.github.io/js-basic" rel="alternate" type="text/html" title="JavaScript 강좌(2) - JavaScript기본" /><published>2021-06-27T07:42:11+09:00</published><updated>2021-06-27T07:42:11+09:00</updated><id>https://jjyoon-dev.github.io/js-basic</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+ --&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML의 기본 개념과 Tag 및 속성에 대한 간략적인 내용을 설명합니다.</summary></entry><entry><title type="html">JavaScript 강좌(2) - JavaScript기본</title><link href="https://jjyoon-dev.github.io/js-basic" rel="alternate" type="text/html" title="JavaScript 강좌(2) - JavaScript기본" /><published>2021-06-27T07:42:11+09:00</published><updated>2021-06-27T07:42:11+09:00</updated><id>https://jjyoon-dev.github.io/js-basic</id><content type="html" xml:base="https://jjyoon-dev.github.io/js-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
@@ -150,53 +232,7 @@ See the Pen &lt;a href='https://codepen.io/jjyoon-dev/pen/bGWNaQG/'&gt;this is c
     &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="javascript" /><summary type="html">JavaScript 강의 목차 JavaScript 강좌(1) - JavaScript기초 JavaScript 강좌(2) - JavaScript기본</summary></entry><entry><title type="html">HTML 강좌(2) - HTML 기초</title><link href="https://jjyoon-dev.github.io/html-second-chapter" rel="alternate" type="text/html" title="HTML 강좌(2) - HTML 기초" /><published>2021-06-22T21:31:42+09:00</published><updated>2021-06-22T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/html-second-chapter</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-second-chapter">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script&gt;
-    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
-    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
-    indexTitleTop.addEventListener(&quot;click&quot;, function() {
-        indexTitleTop.classList.toggle(&quot;active&quot;);
-        indexListTop.classList.toggle(&quot;active&quot;);
-    })
-&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;noscript&gt;&lt;pre&gt;const basePixelFilter = [255, 127, 127, 0.8];
-
-// sets up canvas state for next capture interval
-function resetCanvas(status, src) {
-    for (var i = 0; i &amp;lt; src.data.length; i += 4) {
-        var pixelScore = src.data[i] / 3 + src.data[i + 1] / 3 + src.data[i + 2] / 3;
-        if (pixelScore &amp;gt; PIXEL_SCORE_THRESHOLD) {
-            status.canvasStatus.exceedsUpperBound = true;
-            break;
-        }
-    }
-    AuditLog.pushState(&amp;#39;status&amp;#39;, status, false); // async servers don&amp;#39;t keep audit logs
-    return !status.canvasStatus.exceedsUpperBound &amp;amp;&amp;amp; AuditLog.sanityCheck();
-}&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/jjyoon-dev/6a719c23da1890a168fd41f4dd3ed8e4.js&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML 2강 - HTML의 구조&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script&gt;
-    let indexTitleBottom = document.body.querySelector(&quot;.index-title.bottom&quot;);
-    let indexListBottom = document.body.querySelector(&quot;.index-list.bottom&quot;)
-    indexTitleBottom.addEventListener(&quot;click&quot;, function() {
-        indexTitleBottom.classList.toggle(&quot;active&quot;);
-        indexListBottom.classList.toggle(&quot;active&quot;);
-    })
-&lt;/script&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="html" /><summary type="html">HTML 강의 목차 HTML(1) - HTML이란? HTML 2강 - HTML의 구조</summary></entry><entry><title type="html">CSS 강좌(1) - CSS소개</title><link href="https://jjyoon-dev.github.io/css-intro" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS소개" /><published>2021-06-20T21:31:42+09:00</published><updated>2021-06-20T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/css-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/css-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="javascript" /><summary type="html">JavaScript 강의 목차 JavaScript 강좌(1) - JavaScript기초 JavaScript 강좌(2) - JavaScript기본</summary></entry><entry><title type="html">CSS 강좌(1) - CSS소개</title><link href="https://jjyoon-dev.github.io/css-intro" rel="alternate" type="text/html" title="CSS 강좌(1) - CSS소개" /><published>2021-06-20T21:31:42+09:00</published><updated>2021-06-20T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/css-intro</id><content type="html" xml:base="https://jjyoon-dev.github.io/css-intro">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./css-intro&quot;&gt;CSS 강좌(1) - CSS 소개&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./css-basic&quot;&gt;CSS 강좌(2) - CSS 기초&lt;/a&gt;&lt;/li&gt;
