@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-08-02T18:12:24+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">HTML(2) - HTML의 기본구조</title><link href="https://jjyoon-dev.github.io/html-basic-two" rel="alternate" type="text/html" title="HTML(2) - HTML의 기본구조" /><published>2021-08-01T00:50:11+09:00</published><updated>2021-08-01T00:50:11+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-two</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-two">&lt;p&gt;HTML의 가장 기본적인 구조에 대해 설명합니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://jjyoon-dev.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" /><updated>2021-08-03T05:41:33+09:00</updated><id>https://jjyoon-dev.github.io/feed.xml</id><title type="html">JJYoon IT Diary</title><subtitle>개발에 관한 것들을 공부하고 올리는 블로그</subtitle><entry><title type="html">미니 포트폴리오</title><link href="https://jjyoon-dev.github.io/mini-port" rel="alternate" type="text/html" title="미니 포트폴리오" /><published>2021-08-01T21:31:42+09:00</published><updated>2021-08-01T21:31:42+09:00</updated><id>https://jjyoon-dev.github.io/mini-port</id><content type="html" xml:base="https://jjyoon-dev.github.io/mini-port">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
+    let indexList = document.body.querySelector(&quot;.index-list&quot;)
+    indexTitle.addEventListener(&quot;click&quot;, function() {
+        indexTitle.classList.toggle(&quot;active&quot;);
+        indexList.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;
+
+&lt;p&gt;이 글은 포트폴리오 모음입니다.&lt;/p&gt;</content><author><name>Joshua Jeremiah Uoon</name></author><category term="portfolio" /><summary type="html">JavaScript 강의 목차 JavaScript 강좌(1) - JavaScript기초 JavaScript 강좌(2) - JavaScript기본</summary></entry><entry><title type="html">HTML(2) - HTML의 기본구조</title><link href="https://jjyoon-dev.github.io/html-basic-two" rel="alternate" type="text/html" title="HTML(2) - HTML의 기본구조" /><published>2021-08-01T00:50:11+09:00</published><updated>2021-08-01T00:50:11+09:00</updated><id>https://jjyoon-dev.github.io/html-basic-two</id><content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-two">&lt;p&gt;HTML의 가장 기본적인 구조에 대해 설명합니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
