@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://jjyoon-dev.github.io/tag/html/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-08-01T00:56:11+09:00</updated>
+  <updated>2021-08-02T18:12:24+09:00</updated>
   <id>https://jjyoon-dev.github.io/tag/html/feed.xml</id>
 
   
@@ -42,7 +42,7 @@
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -109,7 +109,7 @@
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -158,7 +158,7 @@
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -249,7 +249,7 @@ name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값�
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./html-second-chapter&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
