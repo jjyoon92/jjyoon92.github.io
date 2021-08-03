@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1f1f1f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	width: 1000px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container .cards {
+	width: 300px;
+	height: 400px;
+	background-color: #000;
+	position: relative;
+}
+
+.container .cards .imgbox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container .cards .imgbox img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.container .cards .overlay {
+	width: 100%;
+	height: 50px;
+	background-color: coral;	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.container .cards:nth-child(1) .overlay {
+	background: linear-gradient(45deg, #556b2f, #ebedee);
+}
+
+.container .cards:nth-child(2) .overlay {
+	background: linear-gradient(45deg, #ccff00, #fa709a);
+}
+
+
+.container .cards .overlay:hover {
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	opacity: 0.8;
+}
+
+.container .cards .overlay::before {
+	content: 'About';
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.container .cards .overlay:hover::before {
+	display: none;
+}
+
+.container .cards .content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	pointer-events: none;
+	color: #fff;
+	opacity: 0;
+}
+
+.container .cards .overlay:hover ~ .content {
+	opacity: 1;
+	transition: 0.7s;
+	transition-delay: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -206,22 +206,24 @@ label:hover {
 }
 
 
-#check2:checked ~ .gallery .loading {
+#check2:checked ~ .gallery .card {
     transform: scale(1);
     opacity: 1;
     position: relative;  
     animation: animate 5s linear 1;    
 }
 
-#check2:checked ~ .gallery .text,
-#check2:checked ~ .gallery .css-js {
+#check2:checked ~ .gallery .loading,
+#check2:checked ~ .gallery .form,
+#check2:checked ~ .gallery .nav,
+#check2:checked ~ .gallery .etc {
     opacity: 0;
     transform: scale(0);
     position: absolute;          
 }
 
 
-#check3:checked ~ .gallery .text {
+#check3:checked ~ .gallery .loading {
     transform: scale(1);
     opacity: 1;
     position: relative;
@@ -229,15 +231,17 @@ label:hover {
     animation: animate 5s linear 1;          
 }
 
-#check3:checked ~ .gallery .loading,
-#check3:checked ~ .gallery .css-js {
+#check3:checked ~ .gallery .card,
+#check3:checked ~ .gallery .form,
+#check3:checked ~ .gallery .nav,
+#check3:checked ~ .gallery .etc {
     opacity: 0;
     transform: scale(0);
     position: absolute;   
 }
 
 
-#check4:checked ~ .gallery .css-js {
+#check4:checked ~ .gallery .form {
     transform: scale(1);
     opacity: 1;
     position: relative;
@@ -245,12 +249,50 @@ label:hover {
     animation: animate 5s linear 1;           
 }
 
+#check4:checked ~ .gallery .card,
 #check4:checked ~ .gallery .loading,
-#check4:checked ~ .gallery .text {
+#check4:checked ~ .gallery .nav,
+#check4:checked ~ .gallery .etc {
     opacity: 0;
     transform: scale(0);
     position: absolute;             
 }
+
+#check5:checked ~ .gallery .nav {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: 1s;
+    animation: animate 5s linear 1;           
+}
+
+#check5:checked ~ .gallery .card,
+#check5:checked ~ .gallery .loading,
+#check5:checked ~ .gallery .form,
+#check5:checked ~ .gallery .etc {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;             
+}
+
+
+#check6:checked ~ .gallery .etc {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: 1s;
+    animation: animate 5s linear 1;           
+}
+
+#check6:checked ~ .gallery .card,
+#check6:checked ~ .gallery .loading,
+#check6:checked ~ .gallery .form,
+#check6:checked ~ .gallery .nav {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;             
+}
+
 
 
 @keyframes animate {
@@ -289,9 +331,21 @@ div.gallery {
     cursor: pointer;
 }
 
+.pic a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: coral;    
+    z-index: 3;
+    opacity: 0;
+    display: none;
+}
+
 .pic::before {
-    /* content: attr(data-title); */
-    content: 'Portfolio';
+    content: attr(data-title);
+    /* content: 'Portfolio'; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -326,6 +380,9 @@ div.gallery {
 .pic:hover::before {
     margin-top: 0;
     opacity: 1;
+}
+.pic:hover a {
+    display: block;
 }
 
 

@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: fantasy;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f06565;
+}
+
+.wave {
+	-webkit-box-reflect: below -10px linear-gradient( transparent, rgba(0,0,0,0.7));
+}
+
+.wave span {
+	display: inline-block;
+	color: #fff;
+	font-size: 3em;
+	margin: 0 10px;	
+	text-transform: uppercase;
+	animation: animate 2.5s ease-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+	0% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
