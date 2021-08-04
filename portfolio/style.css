@@ -316,7 +316,7 @@ label:hover {
 
 div.gallery {
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto;    
     display: grid;    
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;    
@@ -324,7 +324,7 @@ div.gallery {
 }
 
 .pic-wrap {    
-    width: 380px;
+    width: 380px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,8 +416,7 @@ div.gallery {
 }
 
 .pic-wrap .link-wrap a {
-    /* float: left; */
-    display: block;
+    display: block;    
     width: 100%;
     height: 30%;
     background-color: #8c9794;
@@ -491,6 +490,18 @@ div.gallery {
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
 @media (max-width:479px) { 
+    
+    .pic-wrap .link-wrap {
+        width: 200px;
+        height: 100%;
+        display: flex;
+    }
+    
+    .pic-wrap .link-wrap a {
+        background-color: #000000;
+        width: 300px;
+        height: 500px;
+    }
 
     @keyframes small-h1 {
         0% {
