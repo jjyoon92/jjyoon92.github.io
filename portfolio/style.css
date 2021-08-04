@@ -491,7 +491,46 @@ div.gallery {
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
 @media (max-width:479px) { 
+
+    @keyframes small-h1 {
+        0% {
+            font-size: 4rem;
+        }
+        50% {
+            font-size: 4rem;
+        }
+        100% {
+            font-size: 3rem;
+        }
+    }
+
+    .header h1::before {
+        width: 0%;
+        animation: line 3s linear;
+    }
+
+    @keyframes line {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 100%;
+            opacity: 1;
+        }
+        100% {
+            width: 100%;
+            opacity: 0;
+        }
+    }
+
     div.gallery {
         grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        width: 90%;
+    }
+
+    .gallery .pic-wrap {
+        width: 100%;
+        /* height: 200px; */
     }
 };
