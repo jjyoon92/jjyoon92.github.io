@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://jjyoon-dev.github.io/author/jjyoon/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://jjyoon-dev.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-08-04T22:26:45+09:00</updated>
+  <updated>2021-08-06T02:36:42+09:00</updated>
   <id>https://jjyoon-dev.github.io/author/jjyoon/feed.xml</id>
 
   
@@ -32,27 +32,170 @@
 
   
     <entry>
-      <title type="html">미니 포트폴리오</title>
-      <link href="https://jjyoon-dev.github.io/mini-port" rel="alternate" type="text/html" title="미니 포트폴리오" />
-      <published>2021-08-01T21:31:42+09:00</published>
-      <updated>2021-08-01T21:31:42+09:00</updated>
-      <id>https://jjyoon-dev.github.io/mini-port</id>
-      <content type="html" xml:base="https://jjyoon-dev.github.io/mini-port">&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
+      <title type="html">HTML(3) - 기본 태그 1</title>
+      <link href="https://jjyoon-dev.github.io/html-basic-three" rel="alternate" type="text/html" title="HTML(3) - 기본 태그 1" />
+      <published>2021-08-05T01:48:01+09:00</published>
+      <updated>2021-08-05T01:48:01+09:00</updated>
+      <id>https://jjyoon-dev.github.io/html-basic-three</id>
+      <content type="html" xml:base="https://jjyoon-dev.github.io/html-basic-three">&lt;p&gt;HTML의 기본적인 몇가지 태그에 대해 설명합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title top&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
-    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
-    let indexList = document.body.querySelector(&quot;.index-list&quot;)
-    indexTitle.addEventListener(&quot;click&quot;, function() {
-        indexTitle.classList.toggle(&quot;active&quot;);
-        indexList.classList.toggle(&quot;active&quot;);
+    let indexTitleTop = document.body.querySelector(&quot;.index-title.top&quot;);
+    let indexListTop = document.body.querySelector(&quot;.index-list.top&quot;)
+    indexTitleTop.addEventListener(&quot;click&quot;, function() {
+        indexTitleTop.classList.toggle(&quot;active&quot;);
+        indexListTop.classList.toggle(&quot;active&quot;);
     })
 &lt;/script&gt;
 
-&lt;p&gt;이 글은 포트폴리오 모음입니다.&lt;/p&gt;</content>
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;제목&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;글 본문&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;br/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;i&amp;gt;&lt;/span&gt;글자 기울이기&lt;span class=&quot;nt&quot;&gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;bold 강조&lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;strong 강조&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;이미지 경로&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;링크&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&amp;gt;&lt;/span&gt;버튼&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&lt;/span&gt;리스트&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;&lt;/span&gt;리스트&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 태그들은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; 태그내에 작성되며 실질적으로 문서를 표현하는데 사용되는 태그들입니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-헤딩태그-h1h1--h6h6&quot;&gt;1. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;헤딩태그 &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt; ~ &amp;lt;h6&amp;gt;&amp;lt;/h6&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;문서내의 각 계층 제목을 나타낼 때 사용합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;으로 갈수록 크기가 작아집니다.&lt;/li&gt;
+  &lt;li&gt;문서의 계층 구조때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt; 문서 제목&lt;/code&gt;은 한번만 사용 하는것이 권장 사항이며, 중간의 번호를 건너뛰고 작성하는 것은 권장하지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;예제&quot;&gt;예제&lt;/h6&gt;
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;vYmVNqN&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/vYmVNqN/&quot;&gt;&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;2pp&quot;&gt;2.&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paragraph(문단)의 약자로, 하나의 문단을 생성할때 사용한다.&lt;/li&gt;
+  &lt;li&gt;기본적으로는 ‘enter’를 입력해도 줄바꿈이 일어나지 않으며 단순한 공백(space)처리 됩니다., 줄바꿈시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;태그를 사용해야합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-br&quot;&gt;3. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;태그를 삽입하면 해당 위치를 기준으로 줄바꿈이 일어납니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;4-ii&quot;&gt;4. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;i&amp;gt;&amp;lt;/i&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;italic의 약자로, 글자를 기울여서 표시합니다.&lt;/li&gt;
+  &lt;li&gt;CSS에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-style=&quot;italic&quot;&lt;/code&gt;으로 동일하게 표현할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;5-bb&quot;&gt;5. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;bold의 약자로, 글자를 굵게 표시하여 강조를 나타냅니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;6-strongstrong&quot;&gt;6. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;bold와 같은 기능을 하지만 최신 표준에선 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;을 사용하는 것을 권장합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;예제-1&quot;&gt;예제&lt;/h6&gt;
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;poPxjOd&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/poPxjOd/&quot;&gt;&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;7-img-&quot;&gt;7. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;이미지를 삽입하기 위한 태그로입니다.&lt;/li&gt;
+  &lt;li&gt;주요 속성으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src, alt, width, height 등&lt;/code&gt;이 있으며 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src=&quot;&quot;&lt;/code&gt;속성을 통해 이미지 경로를 지정합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alt(alternate)&lt;/code&gt;속성은 이미지를 불러 올 수 없는 상황이 되었을 때 이미지를 대체하여 alt속성 내의 값을 나타냅니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width, height&lt;/code&gt;는 각각 이미지의 너비와 높이를 지정합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;예제-2&quot;&gt;예제&lt;/h6&gt;
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;wvdYKOJ&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/wvdYKOJ/&quot;&gt;&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;8-buttonbutton&quot;&gt;8. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;button&amp;gt;&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;클릭할 수 있는 버튼을 만들 때 사용합니다.&lt;/li&gt;
+  &lt;li&gt;비슷한&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;submit/reset/button&quot;&amp;gt;&lt;/code&gt;과 다르게 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;button&lt;/code&gt;요소 안에는 이미지와 같은 내용을 넣을 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;주의사항으로는 브라우저마다 표현되는 기본값이 다르기 때문에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type&lt;/code&gt;속성을 지정해주는것이 좋습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;9-ulliliul-olliliol&quot;&gt;9. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt; &amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&lt;/code&gt;태그는 list의 약자로, 목록을 생성하는 태그입니다.&lt;/li&gt;
+  &lt;li&gt;단독으로 사용될 수 없으며 바깥쪽에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt;태그 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ol&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;태그가 감싸주는 형태로 사용되야 합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; 태그는 unorderd list의 약자로 리스트에 순서가 없을 경우 사용합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; 태그는 orderd list의 약자로 순서가 있는 리스트에 번호를 매길 경우 사용합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&amp;lt;ol&amp;gt;&lt;/code&gt;태그 하위에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;태그나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;태그를 넣어 이중 리스트를 만들 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;예제-3&quot;&gt;예제&lt;/h6&gt;
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;RwVeWJw&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/RwVeWJw/&quot;&gt;&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h4 id=&quot;10-divdiv&quot;&gt;10. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Division의 약자로, 레이아웃을 구분하는데 사용됩니다.&lt;/li&gt;
+  &lt;li&gt;특별한 기능은 없으며 설계의 도구로 사용됩니다. CSS와 함께 사용됩니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display&lt;/code&gt; 속성이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt;입니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display: block&lt;/code&gt;속성은 간단하게 요소가 위치한 라인 전체를 차지한다는 것입니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;가 작은 크기의&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt;를 지닌다 하여도 기본적으로 해당 라인은 다른 요소가 침범할 수 없습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;11-spanspan&quot;&gt;11. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;태그와 마찬가지로 특별한 기능은 없습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;와는 다르게 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display&lt;/code&gt;속성이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline&lt;/code&gt;입니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display: inline&lt;/code&gt;속성은 해당 속성을 지닌 요소들이 라인 하나에 동시에 위치할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;예제-4&quot;&gt;예제&lt;/h6&gt;
+
+&lt;p data-height=&quot;500&quot; data-width=&quot;100&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;GRmYogj&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;jjyoon-dev&quot; class=&quot;codepen split-output&quot; style=&quot;height: 300px; width: 100px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; align-self: stretch;&quot;&gt;
+See the Pen &lt;a href=&quot;https://codepen.io/jjyoon-dev/pen/GRmYogj/&quot;&gt;&lt;/a&gt; by jjyoon-dev (&lt;a href=&quot;https://codepen.io/jjyoon-dev&quot;&gt;@jjyoon-dev&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title bottom&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;HTML 강의 목차 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    let indexTitleBottom = document.body.querySelector(&quot;.index-title.bottom&quot;);
+    let indexListBottom = document.body.querySelector(&quot;.index-list.bottom&quot;)
+    indexTitleBottom.addEventListener(&quot;click&quot;, function() {
+        indexTitleBottom.classList.toggle(&quot;active&quot;);
+        indexListBottom.classList.toggle(&quot;active&quot;);
+    })
+&lt;/script&gt;</content>
 
       
       
@@ -69,11 +212,11 @@
       
 
       
-        <category term="portfolio" />
+        <category term="html" />
       
 
       
-        <summary type="html">JavaScript 강의 목차 JavaScript 강좌(1) - JavaScript기초 JavaScript 강좌(2) - JavaScript기본</summary>
+        <summary type="html">HTML의 기본적인 몇가지 태그에 대해 설명합니다.</summary>
       
 
       
@@ -92,6 +235,7 @@
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -159,6 +303,7 @@
 &lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -208,6 +353,7 @@
 &lt;ul class=&quot;table-of-contents-list index-list top&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
@@ -299,6 +445,7 @@ name이 &quot;id&quot;와 &quot;password&quot;인 input태그는 반드시 값�
 &lt;ul class=&quot;table-of-contents-list index-list bottom&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-one&quot;&gt;HTML(1) - HTML이란?&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./html-basic-two&quot;&gt;HTML(2) - HTML의 기본구조&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./html-basic-three&quot;&gt;HTML(3) - 기본 태그 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script&gt;
