@@ -476,8 +476,8 @@ div.gallery {
 }
 
 .pic-wrap .link-wrap a.no-video {
-    background-color: #3f3f3f;
-    cursor:none;
+    background-color: #3f3f3f; 
+    cursor: default;  
 }
 
 .pic-wrap .link-wrap a.no-video:hover {
