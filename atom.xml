@@ -53,34 +53,6 @@
     
       
       <item>
-        <title>JavaScript 강좌(2) - JavaScript기본</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;JavaScript 강의 목차 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list index-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./js-intro&quot;&gt;JavaScript 강좌(1) - JavaScript기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./js-basic&quot;&gt;JavaScript 강좌(2) - JavaScript기본&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script&gt;
-    let indexTitle = document.body.querySelector(&quot;.index-title&quot;);
-    let indexList = document.body.querySelector(&quot;.index-list&quot;)
-    indexTitle.addEventListener(&quot;click&quot;, function() {
-        indexTitle.classList.toggle(&quot;active&quot;);
-        indexList.classList.toggle(&quot;active&quot;);
-    })
-&lt;/script&gt;
-
-</description>
-        
-        <pubDate>Sun, 27 Jun 2021 07:42:11 +0900</pubDate>
-        <link>
-        https://jjyoon-dev.github.io/js-basic</link>
-        <guid isPermaLink="true">https://jjyoon-dev.github.io/js-basic</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>CSS 강좌(1) - CSS기본</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list index-title&quot; style=&quot;cursor:pointer; text-decoration: none; font-weight:bold;&quot;&gt;CSS 강의 목차 &lt;/span&gt;&lt;/p&gt;
