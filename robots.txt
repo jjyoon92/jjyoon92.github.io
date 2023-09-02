@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privateData/
 
-Sitemap: https://jjyoon-dev.github.io/sitemap.xml
+Sitemap: https://jjyoon92.github.io/sitemap.xml
