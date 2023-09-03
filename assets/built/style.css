@@ -1,0 +1,292 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+#header {
+    background: url('/assets/built/images/blog-cover2.jpg') no-repeat center center/cover;
+    color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    min-width: 1000px;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+main {
+    margin: 0 auto;
+    min-width: 1000px;
+}
+
+.section-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+section {
+    margin: 40px auto;
+    padding: 50px 0;
+    border: 1px solid #ccc;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#about-me {
+    margin-bottom: 2em; /* 섹션과 다음 섹션 사이의 간격 */
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.info-item {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* 이 부분을 추가 */
+    box-sizing: border-box;
+}
+
+
+.info-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+}
+
+.content {
+    font-size: 1em;
+}
+
+
+/* Skill Bar styling */
+.skill-container {
+    position: relative;
+}
+
+.skill-bar {
+    position: absolute;
+    width: 230px;
+    height: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #7777e3;
+    font-size: 18px;
+    text-align: right;
+    line-height: 30px;
+    color: white;
+    padding-right: 10px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Skill Row and Skill Bar styling */
+.skill-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.skill-bar {
+    margin-top: 10px;
+    position: relative;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.skill-container img {
+    width: 100px;
+    height: 100px;
+}
+
+/* DETAILED SKILLS CSS */
+.detailed-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 또는 space-between, center 등을 사용할 수 있습니다. */
+    margin-bottom: 2em;
+}
+
+.skill-category {
+    flex-basis: calc(33.33% - 20px); /* 3개의 카테고리가 한 줄에 올 수 있도록 33.33%를 사용하고, 20px은 간격을 위한 값입니다. */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.skill-category-title {
+    text-align: center; /* 제목을 중앙에 배치 */
+    margin-bottom: 1em; /* 제목 아래에 간격을 줍니다. */
+}
+
+.skill-category-logos {
+    display: flex;
+    justify-content: center; /* 로고 이미지들을 중앙에 배치 */
+    flex-wrap: wrap; /* 이미지가 많을 경우 다음 줄로 넘어갈 수 있도록 */
+}
+
+.skill-category-logos img {
+    margin: 5px; /* 이미지 간의 간격을 설정 */
+    max-width: 50px; /* 로고의 최대 크기 설정 */
+    height: auto; /* 비율을 유지 */
+}
+
+
+/* Logo styling */
+#logos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#logos img {
+    width: 100px;  /* 크기를 50px에서 100px로 변경 */
+    height: 100px;  /* 크기를 50px에서 100px로 변경 */
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#logos img:hover {
+    transform: scale(1.1);
+}
+
+/* ... 기존 CSS 코드 ... */
+
+
+/* Portfolio styling */
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.project:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+
+/* Add this CSS to style the button */
+.scroll-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f67676;
+    color: white;
+    border: none;
+    border-radius: 99px;
+    z-index: 1000;  /* To make sure it appears above all other elements */
+}
+
+
+/* footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
