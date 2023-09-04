@@ -77,19 +77,19 @@ section {
 }
 
 #about-me {
-    margin-bottom: 2em; /* 섹션과 다음 섹션 사이의 간격 */
+    margin-bottom: 2rem; /* 섹션과 다음 섹션 사이의 간격 */
 }
 
 .personal-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .info-item {
     flex-basis: calc(33.33% - 20px);
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     display: flex;
     align-items: center;
     justify-content: center;  /* 이 부분을 추가 */
@@ -100,7 +100,7 @@ section {
 .info-item img {
     width: 40px;
     height: 40px;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .info-text {
@@ -109,33 +109,27 @@ section {
 }
 
 .category {
-    font-size: 0.9em;
-    margin-bottom: 0.2em;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
 }
 
 .content {
-    font-size: 1em;
+    width: 200px;
+    font-size: 1rem;
 }
 
+#skills {
+    background-color: #ffe0e0;
+}
 
 /* Skill Bar styling */
 .skill-container {
     position: relative;
 }
 
-.skill-bar {
-    position: absolute;
-    width: 230px;
-    height: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: #ddd;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    overflow: hidden;
-}
 
 .skill-level {
+    width: 0; /* 초기 너비를 0으로 설정 */
     height: 100%;
     position: absolute;
     left: 0;
@@ -147,13 +141,16 @@ section {
     color: white;
     padding-right: 10px;
     border-radius: 15px 0 0 15px;
+    transition: width 2s ease-out; /* width 변화에 애니메이션 적용 */
+
 }
 
 /* Skill Row and Skill Bar styling */
 .skill-row {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .skill-container {
@@ -163,10 +160,15 @@ section {
 }
 
 .skill-bar {
-    margin-top: 10px;
-    position: relative;
+    width: 230px;
     height: 30px;
-    background-color: #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    height: 30px;
+    background-color: #ffffff;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -181,30 +183,40 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* 또는 space-between, center 등을 사용할 수 있습니다. */
-    margin-bottom: 2em;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .skill-category {
     flex-basis: calc(33.33% - 20px); /* 3개의 카테고리가 한 줄에 올 수 있도록 33.33%를 사용하고, 20px은 간격을 위한 값입니다. */
     margin: 10px;
     box-sizing: border-box;
+    padding: 0 30px;
 }
 
 .skill-category-title {
     text-align: center; /* 제목을 중앙에 배치 */
-    margin-bottom: 1em; /* 제목 아래에 간격을 줍니다. */
+    margin-bottom: 10px; /* 제목 아래에 간격을 줍니다. */
+    border-bottom: 1px solid #c9c9c9;
 }
+.skill-category-title h4 {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #194d88;
+    font-weight: bold;
+}
+
 
 .skill-category-logos {
     display: flex;
-    justify-content: center; /* 로고 이미지들을 중앙에 배치 */
-    flex-wrap: wrap; /* 이미지가 많을 경우 다음 줄로 넘어갈 수 있도록 */
+    flex-wrap: wrap;
+    justify-content: center; /* 로고들 사이의 공간을 균등하게 나눕니다. */
 }
 
 .skill-category-logos img {
-    margin: 5px; /* 이미지 간의 간격을 설정 */
-    max-width: 50px; /* 로고의 최대 크기 설정 */
-    height: auto; /* 비율을 유지 */
+    width: calc(33.33% - 10px); /* 한 줄에 3개의 로고가 들어갈 수 있도록 너비를 설정합니다. 10px는 약간의 간격을 위한 값입니다. */
+    margin-bottom: 10px; /* 로고 아래에 약간의 간격을 추가합니다. */
 }
 
 
@@ -225,7 +237,8 @@ section {
     transform: scale(1.1);
 }
 
-/* ... 기존 CSS 코드 ... */
+
+
 
 
 /* Portfolio styling */
@@ -244,6 +257,12 @@ section {
 /* Contact Section */
 #contact {
     text-align: center;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
 }
 
 
@@ -266,6 +285,7 @@ section {
 
 /* footer */
 #footer {
+    min-width: 1000px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -281,11 +301,6 @@ section {
     align-items: center;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
 
 .social-icons img:hover {
     transform: scale(1.1);

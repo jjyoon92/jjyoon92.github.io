@@ -1,17 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize skill bars
     const skillBars = document.querySelectorAll(".skill-bar");
+    const skillsSection = document.getElementById("skills"); // skills 섹션의 id가 'skills' 라고 가정
+    let hasAnimated = false; // 애니메이션이 발동했는지를 판단하는 플래그
 
-    skillBars.forEach((bar) => {
-        const skill = bar.getAttribute("data-skill");
-        const level = bar.getAttribute("data-level");
+    function fillSkillBars() {
+        skillBars.forEach((bar) => {
+            const skill = bar.getAttribute("data-skill");
+            const level = bar.getAttribute("data-level");
 
-        const levelBar = document.createElement("div");
-        levelBar.classList.add("skill-level");
-        levelBar.style.width = `${level}%`;
-        levelBar.innerText = `${skill} (${level}%)`;
+            const levelBar = bar.querySelector(".skill-level") || document.createElement("div");
 
-        bar.appendChild(levelBar);
+            if (!levelBar.classList.contains("skill-level")) {
+                levelBar.classList.add("skill-level");
+                bar.appendChild(levelBar);
+            }
+
+            // 애니메이션 효과를 위해 setTimeout 사용
+            setTimeout(() => {
+                levelBar.style.width = `${level}%`;
+                levelBar.innerText = `${skill} (${level}%)`;
+            }, 50); // 약간의 딜레이를 줘서 애니메이션이 스무스하게 보이게 합니다.
+        });
+    }
+
+    // 스크롤 이벤트에 대한 리스너 추가
+    window.addEventListener('scroll', () => {
+        const rect = skillsSection.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) { // skills 섹션이 화면에 보일 때
+            fillSkillBars();
+        }
     });
 
 
