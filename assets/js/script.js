@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialize skill bars
+    // SkillBar 설정
     const skillBars = document.querySelectorAll(".skill-bar");
     const skillsSection = document.getElementById("skills"); // skills 섹션의 id가 'skills' 라고 가정
     let hasAnimated = false; // 애니메이션이 발동했는지를 판단하는 플래그
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const scrollToTopButton = document.getElementById("scrollToTopButton");
 
-    // Show button when scrolling down
+    // 스크롤 내리면 버튼 노출
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
             scrollToTopButton.style.display = "block";
@@ -45,11 +45,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Scroll to top when button clicked
+    // 최상위로 스크롤
     scrollToTopButton.addEventListener("click", function () {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
+    });
+
+    // Swiper 설정
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
     });
 });

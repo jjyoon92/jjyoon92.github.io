@@ -104,6 +104,7 @@
         }
     </script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <meta name="generator" content="Jekyll 3.6.2"/>
     <link rel="alternate" type="application/rss+xml" title="JJYoon IT Diary" href="/feed.xml"/>
@@ -112,7 +113,7 @@
 </head>
 <body>
 
-<header id="header" style="background-image:  url(/assets/built/images/blog-cover2.jpg)">
+<header id="header" style="background-image:  url(/assets/built/images/blog-cover.jpg)">
     <nav id="navigation">
         <h1>윤경열의 페이지</h1>
         <a href="#about-me">About Me</a>
@@ -225,7 +226,8 @@
                     <h4>Backend</h4>
                 </div>
                 <div class="skill-category-logos">
-                    <img src="/assets/built/images/logos/logo-springboot.png" alt="Sprintboot">
+                    <img src="/assets/built/images/logos/logo-springboot.png" alt="Springboot">
+                    <img src="/assets/built/images/logos/logo-nodejs.png" alt="NodeJS">
                     <img src="/assets/built/images/logos/logo-firebase.png" alt="Firebase">
                 </div>
             </div>
@@ -277,12 +279,98 @@
     <section id="portfolio">
         <h2 class="section-title">Portfolio</h2>
         <div class="project">
-            <h3>프로젝트 1</h3>
-            <p>이 프로젝트에 대한 설명...</p>
+            <div class="simple-slider">
+                <div class="slides">
+                    <div class="slide"><img src="./assets/built/images/blog-cover.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="./assets/built/images/blog-cover2.jpg" alt="Image 2"></div>
+                    <!-- 추가 이미지들 -->
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+
+            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
+            <div class="project-info">
+                <h3>프로젝트 1</h3>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci consequuntur cum cupiditate dolor dolorum enim, ex facere impedit ipsam modi non quibusdam quisquam quo rem repudiandae velit veniam voluptate?</div>
+                <div class="project-descriptions">
+                    <div class="content-label">GitHub</div>
+                    <div class="content">
+                        <a href="https://github.com/your_username/project1" target="_blank">github.com/your_username/project1</a>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">Link</div>
+                    <div class="content">
+                        <p>주요 기능 설명</p>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">주요 기능</div>
+                    <div class="content">
+                        <p>주요 기능 설명</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="project">
-            <h3>프로젝트 2</h3>
-            <p>이 프로젝트에 대한 설명...</p>
+            <div class="simple-slider">
+                <div class="slides">
+                    <div class="slide"><img src="./assets/built/images/blog-cover.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="./assets/built/images/blog-cover2.jpg" alt="Image 2"></div>
+                    <!-- 추가 이미지들 -->
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+
+            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
+            <div class="project-info">
+                <h3>프로젝트 1</h3>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci consequuntur cum cupiditate dolor dolorum enim, ex facere impedit ipsam modi non quibusdam quisquam quo rem repudiandae velit veniam voluptate?</div>
+                <div class="project-descriptions">
+                    <div class="content-label">GitHub</div>
+                    <div class="content">
+                        <a href="https://github.com/your_username/project1" target="_blank">github.com/your_username/project1</a>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">주요 기능</div>
+                    <div class="content">
+                        <p>주요 기능 설명</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="simple-slider">
+                <div class="slides">
+                    <div class="slide"><img src="./assets/built/images/blog-cover.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="./assets/built/images/blog-cover2.jpg" alt="Image 2"></div>
+                    <!-- 추가 이미지들 -->
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+
+            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
+            <div class="project-info">
+                <h3>프로젝트 1</h3>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci consequuntur cum cupiditate dolor dolorum enim, ex facere impedit ipsam modi non quibusdam quisquam quo rem repudiandae velit veniam voluptate?</div>
+                <div class="project-descriptions">
+                    <div class="content-label">GitHub</div>
+                    <div class="content">
+                        <a href="https://github.com/your_username/project1" target="_blank">github.com/your_username/project1</a>
+                    </div>
+                </div>
+
+                <div class="project-descriptions">
+                    <div class="content-label">주요 기능</div>
+                    <div class="content">
+                        <p>주요 기능 설명</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -304,5 +392,7 @@
 
     </div>
 </footer>
+
+<script src="./assets/built/slider.js"></script>
 </body>
 </html>
