@@ -384,10 +384,25 @@ section {
     font-weight: bold;
 }
 
+.project-info .project-descriptions div.content-label img {
+    width: 25px;
+    height: 25px;
+}
+
+
 .project-info .project-descriptions .content {
     width: 100%;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
+
+.project-info .project-descriptions .content.part,
+.project-info .project-descriptions .content.skills
+{
+    display: block;
+}
+
 
 .project-info .project-descriptions .content a {
     text-decoration: none;

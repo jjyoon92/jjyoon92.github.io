@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // SkillBar 설정
     const skillBars = document.querySelectorAll(".skill-bar");
-    const skillsSection = document.getElementById("skills"); // skills 섹션의 id가 'skills' 라고 가정
+    const skillsSection = document.getElementById("skills");
     let hasAnimated = false; // 애니메이션이 발동했는지를 판단하는 플래그
 
     function fillSkillBars() {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 levelBar.style.width = `${level}%`;
                 levelBar.innerText = `${skill} (${level}%)`;
-            }, 50); // 약간의 딜레이를 줘서 애니메이션이 스무스하게 보이게 합니다.
+            }, 50);
         });
     }
 
