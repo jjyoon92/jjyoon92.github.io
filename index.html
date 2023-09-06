@@ -115,7 +115,7 @@
 
 <header id="header" style="background-image:  url(/assets/built/images/blog-cover.jpg)">
     <nav id="navigation">
-        <h1>윤경열의 페이지</h1>
+        <h1>윤경열의 IT Diary</h1>
         <a href="#about-me">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
@@ -278,26 +278,86 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <h2 class="section-title">Portfolio</h2>
+        <!-- project 1 -->
+        <div class="project">
+            <div class="simple-slider">
+                <div class="slides">
+                    <div class="slide"><img alt="Splash Image" src="./assets/built/images/project/project2/project2-screenshot1.png"></div>
+                    <div class="slide"><img alt="Main Image" src="./assets/built/images/project/project2/project2-screenshot2.png"></div>
+                    <div class="slide"><img alt="Select Profile Image" src="./assets/built/images/project/project2/project2-screenshot3.png"></div>
+                    <div class="slide"><img alt="Join Member Image" src="./assets/built/images/project/project2/project2-screenshot4.png"></div>
+                    <div class="slide"><img alt="Search Image" src="./assets/built/images/project/project2/project2-screenshot5.png"></div>
+                    <div class="slide"><img alt="Book Detail Image" src="./assets/built/images/project/project2/project2-screenshot6.png"></div>
+                    <div class="slide"><img alt="Write Review Image" src="./assets/built/images/project/project2/project2-screenshot7.png"></div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn">&#12296;</button>
+                    <button class="next-btn">&#12297;
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="project-title">
+                    <h3>도서 리뷰 모바일 앱<h3>
+                    <p>2023.08(1인 프로젝트)</p>
+                </div>
+                <div class="description">
+                    <p>
+                        <b>- BloC 패턴을 통해 일관적이고 효율적인 상태 관리를 하여 앱의 아키텍처를 깔끔하게 구성했습니다.<br/>
+                            - 네이버북 API를 활용하여 실시간 도서 검색 기능을 제공함으로써 사용자들은 쉽게 원하는 도서를 찾을 수 있으며, 사용자에게 더 나은 검색 경험을 제공합니다.<br/>
+                            - Firebase Authentication을 사용하여 구글 로그인을 제공하고, 2차적으로 회원 가입까지 완료 인증이되면 서비스를 이용할 수 있습니다.<br/>
+                        - Firebase Database를 이용하여 사용자의 회원 정보와 도서 리뷰 및 별점을 저장하고 동기화함으로써, 앱은 실시간으로 업데이트 됩니다.</b><br/><br/>
+                        Flutter를 본격적으로 사용한 프로젝트이며 BloC패턴에 대한 깊이 있는 공부를 하게되어 좋은 경험이라고 생각합니다.
+                        차후에 사용자 간의 정보 교환을 위해 리뷰 목록을 제공하거나 실시간 채팅 기능등을 추가 개발 할 예정입니다.
+                    </p>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">주요 기능</div>
+                    <div class="content">
+                        <p>도서 검색, 별점 등록 및 리뷰 작성, Firebase연동(프로필 사진, 별점, 리뷰 저장), BloC패턴 적용. 사용자 관리</p>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">GitHub</div>
+                    <div class="content">
+                        <a class="github-link" href="https://github.com/jjyoon92/book_review_flutter_app" target="_blank">jjyoon92/book_review_flutter_app</a>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">기술 스택</div>
+                    <div class="content skills">
+                        <a>Flutter</a>
+                        <a>Firebase</a>
+                        <a>BloC패턴</a>
+                        <a>Naver Book API</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- project 2 -->
         <div class="project">
             <div class="simple-slider">
                 <div class="slides">
                     <div class="slide"><img alt="Splash Image" src="./assets/built/images/project/project1/project1-screenshot1.png"></div>
                     <div class="slide"><img alt="Main Image" src="./assets/built/images/project/project1/project1-screenshot2.png"></div>
                     <div class="slide"><img alt="Select Station Image" src="./assets/built/images/project/project1/project1-screenshot3.png"></div>
-                    <div class="slide"><img alt="Select Date Image" src="./assets/built/images/project/project1/project1-screenshot4.png"></div><div class="slide"><img alt="Search Result" src="./assets/built/images/project/project1/project1-screenshot5.png"></div>
+                    <div class="slide"><img alt="Select Date Image" src="./assets/built/images/project/project1/project1-screenshot4.png"></div>
+                    <div class="slide"><img alt="Search Result" src="./assets/built/images/project/project1/project1-screenshot5.png"></div>
                 </div>
                 <div class="slider-controls">
-                <button class="prev-btn">&#12296;</button>
-                <button class="next-btn">&#12297;
-                </button>
+                    <button class="prev-btn">&#12296;</button>
+                    <button class="next-btn">&#12297;
+                    </button>
                 </div>
             </div>
 
-            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
             <div class="project-info">
                 <div class="project-title">
-                    <h3>기차 예매 앱</h3>
-                    <p>2023.07(팀 프로젝트)</p>
+                    <h3>기차 예매 모바일 앱</h3>
+                    <p>2023.05~2023.07(팀 프로젝트)</p>
                 </div>
                 <div class="description">
                     <p><b>SRT앱을 클론코딩한 기차 예매 서비스 모바일 앱입니다.</b> 어떤 주제를 선정하면 좋을지를 고민하다가 공공데이터API를 적극적으로 활용하면서 실력향상을 위해 도전적인 서비스를 만들어보고 싶어 시작하게 되었습니다.<br/><b>Figma를 사용하여 와이어프레임과, 프로토타입을 제작하고 Android Native로 개발하였습니다. 서버는 SpringBoot를 사용하였으며 MariaDB를 데이터베이스로 사용하였습니다.</b><br/>주 목표로 삼았던 회원인증과 노선 조회, 예매 및 환불처리를 개발 완료하였으며 이를 개발하는 동안 많은 것들을 배웠지만 특히 의존성 주입을 적극 사용해 볼 수 있었던 기회였습니다.
@@ -312,87 +372,87 @@
                 <div class="project-descriptions">
                     <div class="content-label">GitHub</div>
                     <div class="content">
-                        <a href="https://github.com/jjyoon92/TrainReservation_Project" target="_blank">jjyoon92/TrainReservation_Project</a>
+                        <a class="github-link" href="https://github.com/jjyoon92/TrainReservation_Project" target="_blank">jjyoon92/TrainReservation_Project</a>
                     </div>
                 </div>
                 <div class="project-descriptions">
                     <div class="content-label">담당 파트</div>
                     <div class="content">
-                        <p>
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/MainActivity.kt">[메인 화면]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/StationSelectActivity.kt">[노선 선택]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/DepartureCalendarActivity.kt">[날짜 선택]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/TrainScheduleActivity.kt">[운행 시간표]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/adapters/TrainScheduleAdapter.kt">[좌석 예약 진행]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationDetailActivity.kt">[예약 확인, 결제 및 취소]</a>
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationTicketListActivity.kt">[승차권 확인]</a>,
-                            <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationCancelActivity.kt">[예매 취소]</a>
-                        </p>
+
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/MainActivity.kt" target="_blank">메인 화면</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/StationSelectActivity.kt" target="_blank">노선 선택</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/DepartureCalendarActivity.kt" target="_blank">날짜 선택</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/TrainScheduleActivity.kt" target="_blank">운행 시간표</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/adapters/TrainScheduleAdapter.kt" target="_blank">좌석 예약 진행</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationDetailActivity.kt" target="_blank">예약 확인, 결제 및 취소</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationTicketListActivity.kt" target="_blank">승차권 확인</a>
+                        <a href="https://github.com/jjyoon92/TrainReservation_Project/blob/main/app/src/main/java/com/sdt/trproject/ReservationCancelActivity.kt" target="_blank">예매 취소</a>
+                    </div>
+                </div>
+                <div class="project-descriptions">
+                    <div class="content-label">기술 스택</div>
+                    <div class="content skills">
+                        <a>Android</a>
+                        <a>Figma</a>
+                        <a>SpringBoot</a>
+                        <a>공공데이터API</a>
+                        <a>MariaDB</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- project 3 -->
         <div class="project">
             <div class="simple-slider">
                 <div class="slides">
-                    <div class="slide"><img alt="Image 1" src="./assets/built/images/blog-cover.jpg"></div>
-                    <div class="slide"><img alt="Image 2" src="./assets/built/images/blog-cover2.jpg"></div>
-                    <!-- 추가 이미지들 -->
+                    <div class="slide"><img alt="Main Image" src="./assets/built/images/project/project3/project3-screenshot1.png"></div>
+                    <div class="slide"><img alt="Quiz Image" src="./assets/built/images/project/project3/project3-screenshot2.png"></div>
+                    <div class="slide"><img alt="Loading Image" src="./assets/built/images/project/project3/project3-screenshot3.png"></div>
+                    <div class="slide"><img alt="Result Image" src="./assets/built/images/project/project3/project3-screenshot4.png"></div>
+                    <div class="slide"><img alt="Share Icon Image" src="./assets/built/images/project/project3/project3-screenshot5.png"></div>
                 </div>
-                <button class="prev-btn">Prev</button>
-                <button class="next-btn">Next</button>
+                <div class="slider-controls">
+                    <button class="prev-btn">&#12296;</button>
+                    <button class="next-btn">&#12297;
+                    </button>
+                </div>
             </div>
 
-            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
             <div class="project-info">
-                <h3>프로젝트 1</h3>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
-                    consequuntur cum cupiditate dolor dolorum enim, ex facere impedit ipsam modi non quibusdam quisquam
-                    quo rem repudiandae velit veniam voluptate?
+                <div class="project-title">
+                    <h3>향수 추천 MBTI 테스트(WEB)<h3>
+                        <p>2022.05(2인 프로젝트)</p>
                 </div>
-                <div class="project-descriptions">
-                    <div class="content-label">GitHub</div>
-                    <div class="content">
-                        <a href="https://github.com/your_username/project1" target="_blank">github.com/your_username/project1</a>
-                    </div>
+                <div class="description">
+                    <p>
+                        기획자 친구와 함께 협업하여 만든 MBTI 테스트 입니다.<br/>
+                        기존의 다른 MBTI 테스트와의 차별점을 두고, 보다 명확하게 사용자의 성향에 맞춰 제품을 추천하기위해 32가지의 결과를 만들었습니다.<br/>
+                        <b>별도의 서버 개발없이 Firebase Database를 통해 테스트 횟수나 결과 빈도등을 수집하였으며,
+                        도메인 구매 없이 웹서비스 배포를 위해 Netlify를 이용하여 배포를 하였습니다.
+                        Kakao, Facebook, Twitter 공유 API를 사용하여 SNS 공유가 가능하고, clipboard.js 를 사용하여 현재 보고 있는 결과페이지의 주소를 그대로 복사 할 수 있습니다.</b>
+                        비록 철지난 MBTI 테스트지만 처음으로 직접 구상하고 개발하여 웹 서비스 배포를 해보았다는 것에 의미를 가진 프로젝트입니다.
+                    </p>
                 </div>
                 <div class="project-descriptions">
                     <div class="content-label">주요 기능</div>
                     <div class="content">
-                        <p>주요 기능 설명</p>
+                        <p>선택지에 따른 다양한 결과 제공, SNS 공유기능, 결과화면 링크 복사, Firebase 데이터 저장 및 수집, </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class="simple-slider">
-                <div class="slides">
-                    <div class="slide"><img alt="Image 1" src="./assets/built/images/blog-cover.jpg"></div>
-                    <div class="slide"><img alt="Image 2" src="./assets/built/images/blog-cover2.jpg"></div>
-                    <!-- 추가 이미지들 -->
-                </div>
-                <button class="prev-btn">Prev</button>
-                <button class="next-btn">Next</button>
-            </div>
-
-            <!-- 프로젝트 정보 부분은 이전과 동일하게 유지 -->
-            <div class="project-info">
-                <h3>프로젝트 1</h3>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
-                    consequuntur cum cupiditate dolor dolorum enim, ex facere impedit ipsam modi non quibusdam quisquam
-                    quo rem repudiandae velit veniam voluptate?
                 </div>
                 <div class="project-descriptions">
                     <div class="content-label">GitHub</div>
                     <div class="content">
-                        <a href="https://github.com/your_username/project1" target="_blank">github.com/your_username/project1</a>
+                        <a class="github-link" href="https://github.com/jjyoon92/perfumbti" target="_blank">jjyoon92/perfumbti</a>
                     </div>
                 </div>
-
                 <div class="project-descriptions">
-                    <div class="content-label">주요 기능</div>
-                    <div class="content">
-                        <p>주요 기능 설명</p>
+                    <div class="content-label">기술 스택</div>
+                    <div class="content skills">
+                        <a>HTML,CSS,JS</a>
+                        <a>Firebase</a>
+                        <a>Netlify</a>
+                        <a>Kakao ad</a>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -405,9 +465,9 @@
         <p>Email: jjyoon5030@gmail.com</p>
         <p>전화번호: 010-5357-7561</p>
         <div class="social-icons">
-            <a href="https://github.com/jjyoon92?tab=repositories"><img alt="GitHub"
+            <a href="https://github.com/jjyoon92?tab=repositories" target="_blank"><img alt="GitHub"
                                                                         src="/assets/built/images/icons/icon-github.png"></a>
-            <a href="https://open.kakao.com/o/s3SyXaFf"><img alt="KakaoTalk"
+            <a href="https://open.kakao.com/o/s3SyXaFf" target="_blank"><img alt="KakaoTalk"
                                                              src="/assets/built/images/icons/icon-kakaotalk.png"></a>
         </div>
     </section>
@@ -416,7 +476,6 @@
 <footer id="footer">
     <div class="footer-content">
         <p>© 2023 by JJYoon92. All Rights Reserved.</p>
-
     </div>
 </footer>
 

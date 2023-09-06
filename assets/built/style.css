@@ -1,4 +1,4 @@
-/* General styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -250,6 +250,7 @@ section {
     min-width: 100%;
     /*padding: 20px;*/
     margin: 0;
+    border-radius: 0;
     background-color: rgba(214, 183, 246, 0.62);
 }
 
@@ -264,14 +265,15 @@ section {
     display: flex;
     padding: 50px;
     background-color: #ffffff;
+    border: 1px solid black;
     border-radius: 25px;
 }
 
+/* slider */
 .simple-slider {
     position: relative;
     width: 500px;
     overflow: hidden;
-    /*flex: 1;*/
 }
 
 .slides {
@@ -311,18 +313,19 @@ section {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-weight: bold;
     /*padding: 2px 10px;*/
     margin: 0 5px;
-    border-radius: 50%;
-    font-size: 22px;
+    /*border-radius: 50%;*/
+    font-size: 30px;
     font-weight: bold;
     line-height: 30px;
     transition: background-color 0.3s;
 }
 
-.prev-btn:hover, .next-btn:hover {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+.prev-btn:hover, .next-btn:active {
+    color: #ef5959;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
 }
 
 .prev-btn {
@@ -333,13 +336,14 @@ section {
     right: 10px;
 }
 
+/* project 정보 */
 .project-info {
     display: flex;
     width: 100%;
     font-size: 18px;
     flex-direction: column;
     justify-content: space-between; /* 설명 내용들 사이의 간격을 동일하게 설정 */
-    background-color: #fafafa;
+    background-color: #f3f3f3;
     border: 1px solid #818181;
     border-radius: 5px;
     padding: 25px;
@@ -355,22 +359,22 @@ section {
     font-size: 18px;
 }
 .project-info .description {
-    height: 250px;
+    /*height: 300px;*/
 }
 .project-info .description p {
     text-align: start;
+    line-height: 32px;
 }
 
 
 .project-info .project-descriptions {
     display: flex;
     flex-direction: row;
-    /*margin-bottom: 25px;*/
-    height:50px;
+    margin: 15px 0;
 }
 
 .project-info .project-descriptions div.content-label {
-    width: 100px;
+    width: 200px;
     height: 100%;
     /*background-color: #0e16ce;*/
     display: flex;
@@ -379,33 +383,53 @@ section {
     font-size: 20px;
     font-weight: bold;
 }
+
 .project-info .project-descriptions .content {
     width: 100%;
-    display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-    padding: 0 20px;
     text-align: left;
 }
 
 .project-info .project-descriptions .content a {
-    color: #e130ad;
     text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #3ecce5;
+    color: #ffffff;
 }
 
 .project-info .project-descriptions .content a:hover {
-    font-weight: bold;
+    /*font-weight: bold;*/
+    background-color: #659df1;
 }
 
 .project-info .project-descriptions .content a:visited {
-    color: #2a86c2;
+    color: #ffffff;
 }
+
+.project-info .project-descriptions .content a.github-link {
+    background-color: #343738;
+}
+
+.project-info .project-descriptions .content a.github-link:hover {
+    background-color: #808080;
+}
+
 
 .project-info .project-descriptions .content p {
     margin: 0;
     padding: 0;
 }
 
+.project-info .project-descriptions .content.skills a {
+    background-color: #72b956;
+    cursor: pointer;
+}
+
+.project-info .project-descriptions .content.skills a:hover {
+    background-color: #548c3b;
+}
 
 /* Contact Section */
 #contact {
@@ -416,23 +440,6 @@ section {
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease;
-}
-
-
-/* Add this CSS to style the button */
-.scroll-to-top {
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #f67676;
-    color: white;
-    border: none;
-    border-radius: 99px;
-    z-index: 1000;  /* To make sure it appears above all other elements */
 }
 
 
@@ -450,11 +457,27 @@ section {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: center;;
 }
 
 
 .social-icons img:hover {
     transform: scale(1.1);
+}
+
+/* Scroll 버튼 */
+.scroll-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f67676;
+    color: white;
+    border: none;
+    border-radius: 99px;
+    z-index: 1000;  /* To make sure it appears above all other elements */
 }

@@ -1,23 +1,23 @@
-const slider = document.querySelector('.simple-slider');
-const slides = slider.querySelector('.slides');
-const slide = slider.querySelectorAll('.slide');
-const prevBtn = slider.querySelector('.prev-btn');
-const nextBtn = slider.querySelector('.next-btn');
+document.addEventListener("DOMContentLoaded", function () {
 
-let currentSlide = 0;
+    let sliders = document.querySelectorAll('.simple-slider');
 
-prevBtn.addEventListener('click', () => {
-    currentSlide--;
-    if (currentSlide < 0) currentSlide = slide.length - 1;
-    updateSlidePosition();
+    sliders.forEach(function (slider) {
+
+        let index = 0;
+        const slides = slider.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        slider.querySelector('.prev-btn').addEventListener('click', function() {
+            index = (index - 1 + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        });
+
+        slider.querySelector('.next-btn').addEventListener('click', function() {
+            index = (index + 1) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        });
+
+    });
+
 });
-
-nextBtn.addEventListener('click', () => {
-    currentSlide++;
-    if (currentSlide >= slide.length) currentSlide = 0;
-    updateSlidePosition();
-});
-
-function updateSlidePosition() {
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
