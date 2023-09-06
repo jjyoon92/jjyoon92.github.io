@@ -80,11 +80,16 @@ section {
     margin-bottom: 2rem; /* 섹션과 다음 섹션 사이의 간격 */
 }
 
+#about-me h2 {
+    margin-bottom: 3rem;
+}
+
+
 .personal-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .info-item {
@@ -109,7 +114,8 @@ section {
 }
 
 .category {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     margin-bottom: 0.2rem;
 }
 
@@ -239,36 +245,43 @@ section {
 
 
 
-
-
 /* Portfolio styling */
 #portfolio {
-    width: 100%;
-    padding: 20px;
+    min-width: 100%;
+    /*padding: 20px;*/
+    margin: 0;
+    background-color: rgba(214, 183, 246, 0.62);
 }
 
+#portfolio h2 {
+    margin:20px 0 30px;
+}
+
+
 .project {
+    max-width: 1000px;
+    margin: 0 auto 20px;
     display: flex;
-    margin-bottom: 30px; /* 각 프로젝트 사이의 간격 */
     padding: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
 }
 
 .simple-slider {
     position: relative;
+    width: 500px;
     overflow: hidden;
-    flex: 1;
-    width: 300px; /* 원하는 크기로 변경 */
-    height: 500px; /* 원하는 크기로 변경 */
+    /*flex: 1;*/
 }
 
 .slides {
     display: flex;
+    width: 100%; /* 원하는 크기로 변경 */
+    height: 90%; /* 원하는 크기로 변경 */
     transition: transform 0.3s;
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
     min-width: 100%;
     position: relative;
 }
@@ -276,7 +289,7 @@ section {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .slider-controls {
@@ -289,13 +302,21 @@ section {
 }
 
 .prev-btn, .next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     color: #000000;
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 2px 5px;
+    /*padding: 2px 10px;*/
     margin: 0 5px;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
     transition: background-color 0.3s;
 }
 
@@ -314,40 +335,77 @@ section {
 
 .project-info {
     display: flex;
-    width: 350px;
+    width: 100%;
+    font-size: 18px;
     flex-direction: column;
     justify-content: space-between; /* 설명 내용들 사이의 간격을 동일하게 설정 */
-    background-color: #3ad900;
+    background-color: #fafafa;
+    border: 1px solid #818181;
+    border-radius: 5px;
     padding: 25px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
-.project-info .description {
-    height: 200px;
+.project-info .project-title h3 {
+    font-size: 36px;
+    margin: 0;
 }
+
+.project-info .project-title p {
+    font-size: 18px;
+}
+.project-info .description {
+    height: 250px;
+}
+.project-info .description p {
+    text-align: start;
+}
+
 
 .project-info .project-descriptions {
-    margin: 0;
-    padding: 0;
-    height: 30px;
     display: flex;
     flex-direction: row;
-    line-height: 30px;
+    /*margin-bottom: 25px;*/
+    height:50px;
 }
 
 .project-info .project-descriptions div.content-label {
     width: 100px;
     height: 100%;
-    background-color: #0e16ce;
+    /*background-color: #0e16ce;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 .project-info .project-descriptions .content {
     width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.project-info .project-descriptions .content a {
+    color: #e130ad;
+    text-decoration: none;
+}
+
+.project-info .project-descriptions .content a:hover {
+    font-weight: bold;
+}
+
+.project-info .project-descriptions .content a:visited {
+    color: #2a86c2;
 }
 
 .project-info .project-descriptions .content p {
     margin: 0;
     padding: 0;
 }
+
 
 /* Contact Section */
 #contact {
