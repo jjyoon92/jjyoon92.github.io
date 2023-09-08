@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+ul, li, ol {
+    list-style: none;
+}
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -55,15 +62,6 @@ main {
     min-width: 1000px;
 }
 
-.section-title {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 
 section {
     margin: 40px auto;
@@ -71,9 +69,18 @@ section {
     border: 1px solid #ccc;
     max-width: 1000px;
     background-color: white;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+}
+
+.section-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 #about-me {
@@ -111,7 +118,7 @@ section {
     margin: 10px 10px 30px 10px;
     display: flex;
     align-items: center;
-    justify-content: center;  /* 이 부분을 추가 */
+    justify-content: center;
     box-sizing: border-box;
 }
 
@@ -210,7 +217,6 @@ section {
 }
 
 
-
 .skill-container .skill-description {
     /*display: none;*/
     width: 140%;
@@ -232,7 +238,7 @@ section {
 
 .skill-container:nth-child(1) .skill-description {
     /*opacity: 1;*/
-    left: 0%;
+    left: 0;
 }
 
 .skill-container:nth-child(2) .skill-description {
@@ -249,6 +255,7 @@ section {
 .skill-container:hover .skill-description {
     opacity: 1;
 }
+
 .skill-container .skill-description span.name {
     display: block;
     width: 100%;
@@ -271,23 +278,24 @@ section {
 .detailed-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* 또는 space-between, center 등을 사용할 수 있습니다. */
+    justify-content: space-around;
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
 .skill-category {
-    flex-basis: calc(33.33% - 20px); /* 3개의 카테고리가 한 줄에 올 수 있도록 33.33%를 사용하고, 20px은 간격을 위한 값입니다. */
+    flex-basis: calc(33.33% - 20px);
     margin: 10px;
     box-sizing: border-box;
     padding: 0 30px;
 }
 
 .skill-category-title {
-    text-align: center; /* 제목을 중앙에 배치 */
-    margin-bottom: 10px; /* 제목 아래에 간격을 줍니다. */
+    text-align: center;
+    margin-bottom: 10px;
     border-bottom: 1px solid #c9c9c9;
 }
+
 .skill-category-title h4 {
     padding: 0;
     margin: 10px 0;
@@ -300,12 +308,12 @@ section {
 .skill-category-logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 로고들 사이의 공간을 균등하게 나눕니다. */
+    justify-content: center;
 }
 
 .skill-category-logos img {
-    width: calc(33.33% - 10px); /* 한 줄에 3개의 로고가 들어갈 수 있도록 너비를 설정합니다. 10px는 약간의 간격을 위한 값입니다. */
-    margin-bottom: 10px; /* 로고 아래에 약간의 간격을 추가합니다. */
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
 }
 
 
@@ -316,8 +324,8 @@ section {
 }
 
 #logos img {
-    width: 100px;  /* 크기를 50px에서 100px로 변경 */
-    height: 100px;  /* 크기를 50px에서 100px로 변경 */
+    width: 100px; /* 크기를 50px에서 100px로 변경 */
+    height: 100px; /* 크기를 50px에서 100px로 변경 */
     margin: 10px;
     transition: transform 0.3s ease;
 }
@@ -325,7 +333,6 @@ section {
 #logos img:hover {
     transform: scale(1.1);
 }
-
 
 
 /* Portfolio styling */
@@ -338,7 +345,7 @@ section {
 }
 
 #portfolio h2 {
-    margin:20px 0 30px;
+    margin: 20px 0 30px;
 }
 
 
@@ -441,9 +448,11 @@ section {
 .project-info .project-title p {
     font-size: 18px;
 }
+
 .project-info .description {
     /*height: 300px;*/
 }
+
 .project-info .description p {
     text-align: start;
     line-height: 32px;
@@ -496,20 +505,19 @@ section {
 }
 
 
-
 .project-info .project-descriptions .content a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 20px;
     margin: 5px;
     border-radius: 20px;
-    background-color: #3ecce5;
+    background-color: #e75992;
     color: #ffffff;
 }
 
 .project-info .project-descriptions .content a:hover {
     /*font-weight: bold;*/
-    background-color: #659df1;
+    background-color: #cc3472;
 }
 
 .project-info .project-descriptions .content a:visited {
@@ -531,12 +539,12 @@ section {
 }
 
 .project-info .project-descriptions .content.skills a {
-    background-color: #72b956;
+    background-color: #8145ec;
     cursor: pointer;
 }
 
 .project-info .project-descriptions .content.skills a:hover {
-    background-color: #548c3b;
+    background-color: #6d32d7;
 }
 
 /* Contact Section */
@@ -587,5 +595,230 @@ section {
     color: white;
     border: none;
     border-radius: 99px;
-    z-index: 1000;  /* To make sure it appears above all other elements */
+    z-index: 1000; /* To make sure it appears above all other elements */
+}
+
+@media all and (max-width: 767px) {
+
+    /* header */
+    #header {
+        width: 100%;
+        min-width: auto;
+        height: 250px;
+        margin: 0;
+    }
+
+    #navigation {
+        width: 90%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2열 생성 */
+        gap: 20px; /* 행과 열 사이의 간격 */
+    }
+
+    #navigation h1 {
+        grid-column: span 2;
+        margin: 0;
+    }
+
+    #navigation a {
+        text-align: center;
+        padding: 0;
+        border: 1px solid #ccc;
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    /* main */
+    main {
+        margin: 0 auto;
+        min-width: auto;
+    }
+
+
+    section {
+        margin: 0;
+        padding: 50px 0;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        text-align: center;
+    }
+
+    /* about me */
+    #about-me {
+        margin: 0;
+    }
+
+    #about-me .profile .image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about-me .profile .image-container img {
+        position: absolute;
+        left: -205px;
+        top: -220px;
+        transform: scale(0.6);
+    }
+
+    .info-item {
+        margin: 15px auto;
+    }
+
+    /* skills */
+    #skills {
+        width: 100%;
+    }
+
+    .skill-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .skill-row .skill-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .skill-row .skill-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-row .skill-container .skill-bar {
+        left: 0;
+        transform: translate(0%);
+        margin-left: 20px;
+
+    }
+
+    .skill-row .skill-container .skill-bar .skill-level {
+        font-size: 14px;
+    }
+
+    .skill-container .skill-description {
+        display: block;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .skill-container:nth-child(1) .skill-description,
+    .skill-container:nth-child(2) .skill-description,
+    .skill-container:nth-child(3) .skill-description,
+    .skill-container:nth-child(4) .skill-description {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* detailed skills */
+    .detailed-skills {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .skill-category-logos img {
+        width: calc(33.33% - 30px);
+        margin-bottom: 10px;
+    }
+
+    /* portfolio */
+    #portfolio {
+        min-width: auto;
+    }
+
+    .project {
+        width: auto;
+        flex-direction: column;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 5px;
+    }
+
+    .simple-slider {
+        position: relative;
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        /*overflow: hidden;*/
+    }
+
+    .simple-slider .project-title {
+        display: block;
+    }
+
+    .simple-slider .project-title h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .slider-controls {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-info {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .project-info .project-title {
+        display: none;
+    }
+
+    .project-info .project-descriptions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-descriptions .content-label {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-descriptions .content-label .label-inner {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .project-descriptions .content-label .label-inner p {
+        width: 100px;
+    }
+
+    .project-descriptions .content .content-inner a {
+        margin: 0;
+    }
+
+
+    .project-descriptions .content .content-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-descriptions .content .content-inner a {
+        width: 100%;
+        margin: 5px auto;
+        font-size: 0.9rem;
+    }
+
+    #footer {
+        min-width: auto;
+    }
+
 }
