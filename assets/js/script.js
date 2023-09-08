@@ -1,8 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     // SkillBar 설정
+    const skillContainers = document.querySelectorAll('.skill-container');
     const skillBars = document.querySelectorAll(".skill-bar");
     const skillsSection = document.getElementById("skills");
     let hasAnimated = false; // 애니메이션이 발동했는지를 판단하는 플래그
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const containers = document.querySelectorAll('.skill-container');
+
+        containers.forEach(container => {
+            container.addEventListener('mouseover', function() {
+                const description = this.querySelector('.skill-description');
+                if (description) {
+                    description.style.opacity = '1';
+                }
+            });
+
+            container.addEventListener('mouseout', function() {
+                const description = this.querySelector('.skill-description');
+                if (description) {
+                    description.style.opacity = '0';
+                }
+            });
+        });
+    });
 
     function fillSkillBars() {
         skillBars.forEach((bar) => {
