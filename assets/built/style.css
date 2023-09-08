@@ -574,7 +574,7 @@ section {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
 
 
@@ -746,10 +746,20 @@ section {
         padding: 5px;
     }
 
+    .project .project-title h3 {
+        font-size: 24px;
+        margin: 20px 0 0;
+    }
+
+    .project .project-title p {
+        margin: 0;
+    }
+
+
     .simple-slider {
         position: relative;
         width: 80%;
-        height: 500px;
+        height: 100%;
         margin: 0 auto;
         /*overflow: hidden;*/
     }
@@ -758,8 +768,12 @@ section {
         display: block;
     }
 
-    .simple-slider .project-title h3 {
-        font-size: 1.5rem;
+    /*.simple-slider .project-title h3 {*/
+    /*    font-size: 1.5rem;*/
+    /*}*/
+
+    .simple-slider .slides {
+        height: 700px;
     }
 
 
@@ -779,6 +793,10 @@ section {
 
     .project-info .project-title {
         display: none;
+    }
+
+    .project-info .description {
+        font-size: 1rem;
     }
 
     .project-info .project-descriptions {
