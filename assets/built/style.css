@@ -84,6 +84,20 @@ section {
     margin-bottom: 3rem;
 }
 
+#about-me .profile .image-container {
+    border-radius: 999px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#about-me .profile .image-container img {
+    position: absolute;
+    left: -150px;
+    top: -200px;
+}
 
 .personal-info {
     display: flex;
