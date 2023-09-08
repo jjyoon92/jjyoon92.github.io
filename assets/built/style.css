@@ -664,14 +664,27 @@ section {
         transform: scale(0.6);
     }
 
+
     .info-item {
+        width: 100%;
         margin: 15px auto;
     }
+
+    .info-item:last-child {
+        display: none;
+    }
+
 
     /* skills */
     #skills {
         width: 100%;
     }
+
+    #skills p.section-desc {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
 
     .skill-row {
         flex-direction: column;
@@ -683,6 +696,7 @@ section {
         flex-direction: row;
         align-items: center;
         margin-top: 10px;
+        margin: 0 auto;
     }
 
     .skill-row .skill-container img {
@@ -759,6 +773,7 @@ section {
     .simple-slider {
         position: relative;
         width: 80%;
+        max-width: 250px;
         height: 100%;
         margin: 0 auto;
         /*overflow: hidden;*/
