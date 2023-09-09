@@ -714,7 +714,7 @@ section {
     }
 
     .skill-row .skill-container .skill-bar .skill-level {
-        font-size: 13px;
+        font-size: 0.75rem;
     }
 
     .skill-container .skill-description {
