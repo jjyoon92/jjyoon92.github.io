@@ -395,6 +395,10 @@ section {
     border-radius: 25px;
 }
 
+.project > .project-title {
+    display: none;
+}
+
 /* slider */
 .simple-slider {
     position: relative;
@@ -475,6 +479,7 @@ section {
     padding: 25px;
     margin-left: 50px;
 }
+
 
 .project-info .project-title h3 {
     font-size: 36px;
@@ -805,6 +810,10 @@ section {
         padding: 5px;
     }
 
+    .project > .project-title {
+        display: block;
+    }
+
     .project .project-title h3 {
         font-size: 24px;
         margin: 20px 0 0;
@@ -822,10 +831,6 @@ section {
         height: 100%;
         margin: 0 auto;
         /*overflow: hidden;*/
-    }
-
-    .simple-slider .project-title {
-        display: block;
     }
 
     /*.simple-slider .project-title h3 {*/
