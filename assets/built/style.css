@@ -216,11 +216,14 @@ section {
     overflow: hidden;
 }
 
+.skill-row .skill-container .skill-bar .skill-level {
+    font-size: 12px;
+}
 
 .skill-container .skill-description {
     /*display: none;*/
     width: 140%;
-    height: 130%;
+    height: 150%;
     position: absolute;
     top: -10%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -708,11 +711,10 @@ section {
         left: 0;
         transform: translate(0%);
         margin-left: 20px;
-
     }
 
     .skill-row .skill-container .skill-bar .skill-level {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .skill-container .skill-description {
