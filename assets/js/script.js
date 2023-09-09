@@ -3,25 +3,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const skillContainers = document.querySelectorAll('.skill-container');
     const skillBars = document.querySelectorAll(".skill-bar");
     const skillsSection = document.getElementById("skills");
-    let hasAnimated = false; // 애니메이션이 발동했는지를 판단하는 플래그
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const containers = document.querySelectorAll('.skill-container');
 
-        containers.forEach(container => {
-            container.addEventListener('mouseover', function() {
-                const description = this.querySelector('.skill-description');
-                if (description) {
-                    description.style.opacity = '1';
-                }
-            });
+    skillContainers.forEach(container => {
+        container.addEventListener('mouseover', function () {
+            const description = this.querySelector('.skill-description');
+            if (description) {
+                description.style.opacity = '1';
+            }
+        });
 
-            container.addEventListener('mouseout', function() {
-                const description = this.querySelector('.skill-description');
-                if (description) {
-                    description.style.opacity = '0';
-                }
-            });
+        container.addEventListener('mouseout', function () {
+            const description = this.querySelector('.skill-description');
+            if (description) {
+                description.style.opacity = '0';
+            }
+        });
+    });
+
+    const skillLogos = document.querySelectorAll('.skill-category-logos img');
+    skillLogos.forEach(logo => {
+
+        logo.addEventListener('mouseover', function () {
+            const tooltip = this.nextElementSibling;
+            tooltip.style.visibility = 'visible';
+            setTimeout(() => {
+                tooltip.style.opacity = '1';
+            }, 10)
+        })
+
+        logo.addEventListener('mouseout', function () {
+            const tooltip = this.nextElementSibling;
+            tooltip.style.opacity = '0';
+            setTimeout(() => {
+                tooltip.style.visibility = 'hidden';
+            }, 1000)
         });
     });
 

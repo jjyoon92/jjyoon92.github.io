@@ -314,9 +314,42 @@ section {
     justify-content: center;
 }
 
-.skill-category-logos img {
+.skill-category-logos .logo-wrap {
     width: calc(33.33% - 10px);
     margin-bottom: 10px;
+    position: relative;
+}
+
+.skill-category-logos img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
 
@@ -743,8 +776,18 @@ section {
         margin-bottom: 2rem;
     }
 
+    /*.skill-category-logos {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*}*/
+
+    /*.skill-category-logos .logo-wrap {*/
+    /*    display: inline-block;*/
+    /*    width: 50px;*/
+    /*    background-color: #3ad900;*/
+    /*}*/
+
     .skill-category-logos img {
-        width: calc(33.33% - 30px);
         margin-bottom: 10px;
     }
 
